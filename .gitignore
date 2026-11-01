@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.claude/
+
+.DS_Store
+
+*.log
+
+# Archived / superseded sample data
+old_sample/
+
+# Local generated data. Tracked Open WebUI snapshots remain distributed;
+# see sample/README.md and scripts/README.md.
+sample/documents
+sample/openwebui_knowledge_base/*/uploads/
+sample/synthetic_add_delete/
+sample/synthetic_add_delete_update/
+sample/synthetic_add_update/
+
+.reparsed
+# Experiment outputs; original recorded result files are already tracked.
+sample/experiments/
+sample/documents_synthetic/
+sample/documents_arxiv50/
+
+# New summaries are local unless explicitly selected for tracking.
+sample/experiment_results/*.json
+sample/experiment_results/*.csv
+sample/experiment_results/*_report.md
+sample/chroma_db/
+sample/report/

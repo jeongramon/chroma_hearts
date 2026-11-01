@@ -1,0 +1,1000 @@
+{
+  "method": "Fresh process per saved C0-C3 working copy; SDK get exact active-data checks; compare full SDK collection configuration and collection metadata to C0; top-10 query_texts for every active and deleted chunk using the saved embedding function.",
+  "scope": "Functional search check, not semantic retrieval quality or invariant ANN ranking. No multiple-collection experiment.",
+  "input_sha256": {
+    "/home/user/Desktop/chroma/chroma_hearts/sample/experiment_results/mitigation_audit_arxiv50_20261025.json": "49a413f45466fb951edf9478fa5311ca222d081c3a4186b718cd5e123b7219e0",
+    "/home/user/Desktop/chroma/chroma_hearts/sample/experiment_results/workload_audit_1.5.9_arxiv50_repeat_20261025.json": "9ab87af541b555990251d7532523d68f72fb65e8d2a2e67d891001b5e2280bce"
+  },
+  "manifest_sha256": {
+    "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/workload_audit_1.5.9_arxiv50_repeat_20261025/seed1/item_delete/manifest.json": "91776320c4494b146908df0f9f2c1fa7325239db1f738fe5f908accb3c175fed",
+    "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/workload_audit_1.5.9_arxiv50_repeat_20261025/seed2/item_delete/manifest.json": "8b697c99b1d8358cb4fffb062b02f4f8ec2132aadb8439094597732f7efb38d0",
+    "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/workload_audit_1.5.9_arxiv50_repeat_20261025/seed3/item_delete/manifest.json": "c63598cf864edcf69a848fb66f58678ad2c51b022e1d7d756e5b999e859147c4",
+    "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/workload_audit_1.5.9_arxiv50_repeat_20261025/seed4/item_delete/manifest.json": "8f407fd6c1bcf131f2855dd5d1c6862b58911ac927ed4d8f9eaa5079cbfc2a5a",
+    "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/workload_audit_1.5.9_arxiv50_repeat_20261025/seed5/item_delete/manifest.json": "26598201a0f841ebc7d9b5206b0a2937a62ca0596a7b463f6df64c8c449e837b"
+  },
+  "code_sha256": {
+    "scripts/verify_mitigation_search.py": "0e81d012a892800a422976f2460b5619aaa520fd39360490a90151b804dfdd67",
+    "src/chroma_hearts/generator/embedding.py": "b06fa8afe718c95253b1dbd68e0d1b9419b260b19da8db3724d2760c4f55b851",
+    "src/chroma_hearts/parser/source_copy.py": "f06f8801308bd52a36060ac239c921cc07038c825fe88d0330e9d46e0bc8b0ef",
+    "scripts/run_validation_set.py": "78faadbd8ec80d05cdafc2668c7c1b8b5f9bef2d49095198544afccde49d6bb0"
+  },
+  "environment": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "chromadb": "1.5.9",
+    "numpy": "2.5.4"
+  },
+  "runs": [
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 487,
+      "active_snapshot_sha256": "fb215cae1537c34b33cb6c5abba67919a1298050f802899a23810e93f1663363",
+      "active_data_exact": true,
+      "queries": 921,
+      "live_queries": 487,
+      "deleted_queries": 434,
+      "k": 10,
+      "returned_results": 9210,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 487,
+      "seed": 1,
+      "stage": "C0",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "chroma.sqlite3": "3d075225cb9aa8209e10bcef86fb7eecc41f8226ca3ee7c6a36995148216252a",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/data_level0.bin": "0f5a98b7aaf759095abe5571d0cf9fa4837d2aec8274714a1a7dd7bd5651d1db",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/header.bin": "a48c65752b64363d163dd2622c42e5ffe90c147ed54198fe7b64825fb8ed0ea9",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/index_metadata.pickle": "5ca7a8995070eb221a409c771a8d54e8ec375dbcc746cc6e8b32b31741b28403",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/length.bin": "3e76a0280daf4be22298772f99531d83ed16ef2693ab3fc359017558298699ac",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/link_lists.bin": "b63c24123a3dc78b4b5cd8154b88626bc07491ecd1d8188fcb1e3f67edbb07ca"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed1_C0.json",
+      "detail_sha256": "8d9be3a96da93aa727f9f7534e616402aee602fd57fad0938f67a917770dd3e6"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 487,
+      "active_snapshot_sha256": "fb215cae1537c34b33cb6c5abba67919a1298050f802899a23810e93f1663363",
+      "active_data_exact": true,
+      "queries": 921,
+      "live_queries": 487,
+      "deleted_queries": 434,
+      "k": 10,
+      "returned_results": 9210,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 487,
+      "seed": 1,
+      "stage": "C1",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "chroma.sqlite3": "1b335dd079568ea271480cd70dc34305c6158ed69bf01e4d9101d3936b799d2a",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/data_level0.bin": "111b0ab0e95b9cd3cd3ed0c03072f0c315cf8ead74deb8b60d2537e04e4f8c0a",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/header.bin": "0df7fa013d3a81b136cac26c45f099656b8f6ced2042f9faa6a25647c7ea361d",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/index_metadata.pickle": "c89b29bd63a5c7d321aadf9cff654bf9d1b7ccd236d704068ddc7675439ed6f2",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/length.bin": "60da458f2d5cc8525bb25ff490bd1209cb41d0cccc7bdb2341d82a07c1c696b3",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/link_lists.bin": "ff4c05e5504d4ff0ca153e1090676255ca7e268c7c796725752d333c8babcd05"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed1_C1.json",
+      "detail_sha256": "c6d962651d7da6527f153592f08ba5e85d06fffe49b7f2973a2f4771468c659b"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 487,
+      "active_snapshot_sha256": "fb215cae1537c34b33cb6c5abba67919a1298050f802899a23810e93f1663363",
+      "active_data_exact": true,
+      "queries": 921,
+      "live_queries": 487,
+      "deleted_queries": 434,
+      "k": 10,
+      "returned_results": 9210,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 487,
+      "seed": 1,
+      "stage": "C2",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "17339b28-2b13-432a-91ff-a32d512c6205/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+        "17339b28-2b13-432a-91ff-a32d512c6205/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+        "17339b28-2b13-432a-91ff-a32d512c6205/length.bin": "cac9d523d2c53591fcf902546297a125c09721f2342c18b6a45a7dd591196712",
+        "17339b28-2b13-432a-91ff-a32d512c6205/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "chroma.sqlite3": "42f971106e30597c7cf4f5574ff3537e2eebe5f754dd2a85edf08ef49ee34668"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed1_C2.json",
+      "detail_sha256": "6f4b2b1b743a9d1e7c756edb1d87d5e30a9f40798d8692c80241b930bbe0ebc6"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 487,
+      "active_snapshot_sha256": "fb215cae1537c34b33cb6c5abba67919a1298050f802899a23810e93f1663363",
+      "active_data_exact": true,
+      "queries": 921,
+      "live_queries": 487,
+      "deleted_queries": 434,
+      "k": 10,
+      "returned_results": 9210,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 487,
+      "seed": 1,
+      "stage": "C3",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "17339b28-2b13-432a-91ff-a32d512c6205/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+        "17339b28-2b13-432a-91ff-a32d512c6205/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+        "17339b28-2b13-432a-91ff-a32d512c6205/length.bin": "cac9d523d2c53591fcf902546297a125c09721f2342c18b6a45a7dd591196712",
+        "17339b28-2b13-432a-91ff-a32d512c6205/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "chroma.sqlite3": "6e40da5b48cb6d5293cd3724e52705db97fb64f730b77effe1032339397a920e"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed1_C3.json",
+      "detail_sha256": "5004f7ffe57d596c38d1411d60f9d48770f94d0118ff084ccd4f9fbbd055a820"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 428,
+      "active_snapshot_sha256": "c767e2443d6fab957583871549a1195505f71ab0490adb8478e12e019127100d",
+      "active_data_exact": true,
+      "queries": 893,
+      "live_queries": 428,
+      "deleted_queries": 465,
+      "k": 10,
+      "returned_results": 8930,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 428,
+      "seed": 2,
+      "stage": "C0",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/data_level0.bin": "1837afdf2d5deaf2d5d8bc13ddee381d29ae59bcbd3226cca4db3ce5e8ec7601",
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/header.bin": "7a9dc4568e5a6a96dbdf3370044f6496b9793199e4dd88d6e9dcfe3300a0ab6b",
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/index_metadata.pickle": "fe3c99c20cc293f3ded8cbcabb6874479d2b25df98dbb933da36c09e9ba00cf4",
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/length.bin": "0f19104f1aa8b8beb303529fd4f93047da422c262e99378208b8d86792787547",
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/link_lists.bin": "debdd27d45fabbbb1f8f2a87e0e444a508e52e500bdd2645be85a6fa82ce9ef3",
+        "chroma.sqlite3": "01828839344d7e1c679f22ececfb844778a2a0fd73d1dd18355e51d25bd0db2e"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed2_C0.json",
+      "detail_sha256": "27fb388a4c4a528d51aec4e73363910b2ecc2f033018dcc3e3d3e9a0c3f353e8"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 428,
+      "active_snapshot_sha256": "c767e2443d6fab957583871549a1195505f71ab0490adb8478e12e019127100d",
+      "active_data_exact": true,
+      "queries": 893,
+      "live_queries": 428,
+      "deleted_queries": 465,
+      "k": 10,
+      "returned_results": 8930,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 428,
+      "seed": 2,
+      "stage": "C1",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/data_level0.bin": "2a1415dab0f1968784ad115a26a683b5752ba7a53f1b356344a7c01f876f2a9e",
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/header.bin": "cbf3d3f243eee3130db9d0ca9bcdaeef451238ab342c038adec42a9d7e142ec2",
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/index_metadata.pickle": "084f48e76eff666187b7ecd88b712b167108e50fbded4cab26663f09776bef19",
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/length.bin": "ec29a56290010338af565c4d1fc564b11a16a1e12f29bf53efe7c0bb0fe4060f",
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/link_lists.bin": "e5db2bd07d1e0490525d74312a94663ad6039affe4a46bb77b06dbf650462661",
+        "chroma.sqlite3": "3e2f3a74413a3fb712c959f334023274cbc1ae3c26d7832a848ebcdac6b7c1c4"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed2_C1.json",
+      "detail_sha256": "da98f1a4844b0b2c1f88ea93088479d1ad0db7daf348d4ad5c7dbfa53998490f"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 428,
+      "active_snapshot_sha256": "c767e2443d6fab957583871549a1195505f71ab0490adb8478e12e019127100d",
+      "active_data_exact": true,
+      "queries": 893,
+      "live_queries": 428,
+      "deleted_queries": 465,
+      "k": 10,
+      "returned_results": 8930,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 428,
+      "seed": 2,
+      "stage": "C2",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "chroma.sqlite3": "fc4234caa8b96308412735a91401a5e0653fe3b80c483e91bbe24679e0f35bbb",
+        "d7d944e4-cea5-4126-aef0-0387c0c33fd2/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+        "d7d944e4-cea5-4126-aef0-0387c0c33fd2/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+        "d7d944e4-cea5-4126-aef0-0387c0c33fd2/length.bin": "02c6722b412a53d65ff20b4aecd2ea957ee8aec4b96c7a03155c54d2a9b09a97",
+        "d7d944e4-cea5-4126-aef0-0387c0c33fd2/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed2_C2.json",
+      "detail_sha256": "f8897d55d104f2f76a9f63c0eb127f9291d6e9b3f6bf1c60d5cd56bf76d5a24a"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 428,
+      "active_snapshot_sha256": "c767e2443d6fab957583871549a1195505f71ab0490adb8478e12e019127100d",
+      "active_data_exact": true,
+      "queries": 893,
+      "live_queries": 428,
+      "deleted_queries": 465,
+      "k": 10,
+      "returned_results": 8930,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 428,
+      "seed": 2,
+      "stage": "C3",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "chroma.sqlite3": "ef641d5ed60ca5742f239771155c99aaea43092132dd97d9b4cb05f042ed29ce",
+        "d7d944e4-cea5-4126-aef0-0387c0c33fd2/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+        "d7d944e4-cea5-4126-aef0-0387c0c33fd2/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+        "d7d944e4-cea5-4126-aef0-0387c0c33fd2/length.bin": "02c6722b412a53d65ff20b4aecd2ea957ee8aec4b96c7a03155c54d2a9b09a97",
+        "d7d944e4-cea5-4126-aef0-0387c0c33fd2/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed2_C3.json",
+      "detail_sha256": "d5b54b040f0b30290c70e76536dd4ba3815e1dbf7a0e382dc61b9338c558d9c8"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 490,
+      "active_snapshot_sha256": "26905c05cc56bc0d950084a0a594787b07ee8478ccab669d7c202b45bd6edfc5",
+      "active_data_exact": true,
+      "queries": 919,
+      "live_queries": 490,
+      "deleted_queries": 429,
+      "k": 10,
+      "returned_results": 9190,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 490,
+      "seed": 3,
+      "stage": "C0",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/data_level0.bin": "3ca5cd3547929c5f6afba70bd6690d410eb782a70469b8ff5715401f847aea9d",
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/header.bin": "8cd152a168704aa2e804ba15903d1bac2a25262eedeffc8e53b14609970ff65d",
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/index_metadata.pickle": "121816f091f33f845c9c67b293536ecb51644d68d6956aee49293071b6ae4af5",
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/length.bin": "f9c906b7f7b80eedc9a32ec0f4d248157508433a5d46de6889118075887e77e9",
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/link_lists.bin": "6ebbe0721ccd51b536793cfeed26c8e03608f553585ab0196433c73279e2a554",
+        "chroma.sqlite3": "da8de7f518f22ec4a7541eb96ac8f9ed5b3ceb4864517e436542640b1982b5ad"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed3_C0.json",
+      "detail_sha256": "9070b21a07475845a35fb226afd6fb24dfb9ae59a81aab7d824353d5befc2e6e"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 490,
+      "active_snapshot_sha256": "26905c05cc56bc0d950084a0a594787b07ee8478ccab669d7c202b45bd6edfc5",
+      "active_data_exact": true,
+      "queries": 919,
+      "live_queries": 490,
+      "deleted_queries": 429,
+      "k": 10,
+      "returned_results": 9190,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 490,
+      "seed": 3,
+      "stage": "C1",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/data_level0.bin": "031b9f6c0b41c03a0051d275d0bb35b6720638667f6a4306c004d3624ca6050a",
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/header.bin": "149e737f8f13bf6515524265c0aafe8f781e783574f69536cafc162d663f1e27",
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/index_metadata.pickle": "151b438ae5c6c6aac8994246a4eff58986b321d042caefbffb019d26ca6d9761",
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/length.bin": "d1f57d8a46efc5ac1528b2b6f3d624eff4812741d639df6f99f3643bae5debf9",
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/link_lists.bin": "c5c73fbc4f77bd248e6c3de67ed590c3f5b37a63721cde4606058d97eea13bea",
+        "chroma.sqlite3": "231c8bd15773325b77068d2b6ce8095dc61bec5e20b41ce97b748d2ed4a9e9c0"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed3_C1.json",
+      "detail_sha256": "719c3c374599454cb72d3231927f0fd42d809f6d39c2d0c1dec105a2b6609b1e"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 490,
+      "active_snapshot_sha256": "26905c05cc56bc0d950084a0a594787b07ee8478ccab669d7c202b45bd6edfc5",
+      "active_data_exact": true,
+      "queries": 919,
+      "live_queries": 490,
+      "deleted_queries": 429,
+      "k": 10,
+      "returned_results": 9190,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 490,
+      "seed": 3,
+      "stage": "C2",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "a0d3448b-459f-4821-82ab-a49856271742/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+        "a0d3448b-459f-4821-82ab-a49856271742/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+        "a0d3448b-459f-4821-82ab-a49856271742/length.bin": "fde2a584dcc4e96f35762b0c8db457ddd6ed78e6ae5267c81d52210f77975f2c",
+        "a0d3448b-459f-4821-82ab-a49856271742/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "chroma.sqlite3": "16d6d074681d5db7b16139a155c216e8196afbc04199dfde386f54e2996d5d76"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed3_C2.json",
+      "detail_sha256": "75215a9ec9a05382244056e07e4baba4eaf75402004815a36584e5ef4028e242"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 490,
+      "active_snapshot_sha256": "26905c05cc56bc0d950084a0a594787b07ee8478ccab669d7c202b45bd6edfc5",
+      "active_data_exact": true,
+      "queries": 919,
+      "live_queries": 490,
+      "deleted_queries": 429,
+      "k": 10,
+      "returned_results": 9190,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 490,
+      "seed": 3,
+      "stage": "C3",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "a0d3448b-459f-4821-82ab-a49856271742/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+        "a0d3448b-459f-4821-82ab-a49856271742/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+        "a0d3448b-459f-4821-82ab-a49856271742/length.bin": "fde2a584dcc4e96f35762b0c8db457ddd6ed78e6ae5267c81d52210f77975f2c",
+        "a0d3448b-459f-4821-82ab-a49856271742/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "chroma.sqlite3": "313385ffc72656f7d57a7ee317ac7ec109cb7890d04b1eb2618984979248fe74"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed3_C3.json",
+      "detail_sha256": "1be12f6fd0c426c3634b527f67522c608fe579a02cd5780fab43af8bbb9837ff"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 428,
+      "active_snapshot_sha256": "a5aed87263bd02a4e87c57abb69bcbd5cc08a9b0278f7521310ccd4ee5116488",
+      "active_data_exact": true,
+      "queries": 887,
+      "live_queries": 428,
+      "deleted_queries": 459,
+      "k": 10,
+      "returned_results": 8870,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 428,
+      "seed": 4,
+      "stage": "C0",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "chroma.sqlite3": "9a72e3423bf67d2b0931bd19dc42f593a683d48783835f887446ac749438d530",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/data_level0.bin": "443d125b209879b6e1c4f0e4dcbe6523d645cbbb595a03d1c8ca217d0fc26933",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/header.bin": "c7a40cebc649ac44abc83a29e9f15df4277c953bf255ab0352d470479911e5b4",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/index_metadata.pickle": "41bda98c5ba463c7653e48cabf6286b4484ca8ab6dd752550446ca89492b7f14",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/length.bin": "909ea75197d83ef798ade136690b8dfc42f1ab2bd8274cf8dac638ea2da162de",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/link_lists.bin": "4947cbda060994bc4284d01d1c0ba0c938ddcb489055f0fded898cb251ea7e28"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed4_C0.json",
+      "detail_sha256": "61b1edbd23a03b126f59bbb88d696de7cbd9c2f181b82f0a1b83958efa48f9d2"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 428,
+      "active_snapshot_sha256": "a5aed87263bd02a4e87c57abb69bcbd5cc08a9b0278f7521310ccd4ee5116488",
+      "active_data_exact": true,
+      "queries": 887,
+      "live_queries": 428,
+      "deleted_queries": 459,
+      "k": 10,
+      "returned_results": 8870,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 428,
+      "seed": 4,
+      "stage": "C1",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "chroma.sqlite3": "cee47dca8c12c720866dd108e2f61a529d66bef7af2a93f7b2d4a8fd73b8fcea",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/data_level0.bin": "e7b5e7f65bc9e7304d661bd9b6dc2c79fe9a4aa1adb268b8a8733657b686dc7c",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/header.bin": "a8f8c185dde5788aa200e6c9e6b3df193ba5636e00cf01e17b1077e125b0b5e1",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/index_metadata.pickle": "e81a8d612da5712737469e8162ce25c11f5449c974abb0d22a9e3f1d04c55352",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/length.bin": "b3e0dc4d7ea0f25e9043e1a91313c3d4c11a986c6e92e2460e14510af9a0365c",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/link_lists.bin": "c84998b77cbc8f85029e0e97981109ebbb2c6c24752be2be1a0fe42bbd0f4e47"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed4_C1.json",
+      "detail_sha256": "f5b554c9a0a975135743162496f95407d63af428967f71937e7d421317e2e731"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 428,
+      "active_snapshot_sha256": "a5aed87263bd02a4e87c57abb69bcbd5cc08a9b0278f7521310ccd4ee5116488",
+      "active_data_exact": true,
+      "queries": 887,
+      "live_queries": 428,
+      "deleted_queries": 459,
+      "k": 10,
+      "returned_results": 8870,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 428,
+      "seed": 4,
+      "stage": "C2",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "b56f45b0-ee15-477f-92cc-889a15b7ee45/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+        "b56f45b0-ee15-477f-92cc-889a15b7ee45/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+        "b56f45b0-ee15-477f-92cc-889a15b7ee45/length.bin": "c55e937ce145f29d266a2204c5209c486dbe07197c77b0029de4bd9b82221055",
+        "b56f45b0-ee15-477f-92cc-889a15b7ee45/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "chroma.sqlite3": "851afa168004717f2b8b77524dac146b8da83a374573a1e03910246328175dae"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed4_C2.json",
+      "detail_sha256": "86681c0b38e1e34fab81b777c5dbae992966be02cc0ffe1ffa426030da618999"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 428,
+      "active_snapshot_sha256": "a5aed87263bd02a4e87c57abb69bcbd5cc08a9b0278f7521310ccd4ee5116488",
+      "active_data_exact": true,
+      "queries": 887,
+      "live_queries": 428,
+      "deleted_queries": 459,
+      "k": 10,
+      "returned_results": 8870,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 428,
+      "seed": 4,
+      "stage": "C3",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "b56f45b0-ee15-477f-92cc-889a15b7ee45/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+        "b56f45b0-ee15-477f-92cc-889a15b7ee45/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+        "b56f45b0-ee15-477f-92cc-889a15b7ee45/length.bin": "c55e937ce145f29d266a2204c5209c486dbe07197c77b0029de4bd9b82221055",
+        "b56f45b0-ee15-477f-92cc-889a15b7ee45/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "chroma.sqlite3": "cfd2cd08f90110354c5f750da2e5e75a91d1b2ab8a9ed856a236ee229357db02"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed4_C3.json",
+      "detail_sha256": "95d829a63abbc5dc5d037b21918a0df344266bb738b56a72ba05f790376cde56"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 479,
+      "active_snapshot_sha256": "dd315228981a2f64591caed26d7f8d4b7940bd3fa0f20acd1f89fcd19ddd84d0",
+      "active_data_exact": true,
+      "queries": 903,
+      "live_queries": 479,
+      "deleted_queries": 424,
+      "k": 10,
+      "returned_results": 9030,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 479,
+      "seed": 5,
+      "stage": "C0",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/data_level0.bin": "75fe84eccbd2e0b46c3f90260e9c446796b5d60d90dc22d8792f2238668f29d7",
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/header.bin": "8af00292d07eb78016cd12a18184e7b131fc3ae0e53cd6bb47f084bc0d831306",
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/index_metadata.pickle": "84f383902f9755478a27300b24ef74ffe0f8636e1784fcef93467c9624e6dabc",
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/length.bin": "9b4d9004484ffaed93cd0d53fc1b2515ca775f0756a686e5904aca78a29f91db",
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/link_lists.bin": "d1b8e89f647a79092a1b64a3abceb6d711060f1055d26ef215ab7aa5164f43e1",
+        "chroma.sqlite3": "a0321aae66dde45bfa8a9f97a2b24c38cf229e294f621d26157fa8663783e9d4"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed5_C0.json",
+      "detail_sha256": "26de570ac052bb930579f042c1a4d64a862ea1fb61d6fa1b76b37863304eea98"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 479,
+      "active_snapshot_sha256": "dd315228981a2f64591caed26d7f8d4b7940bd3fa0f20acd1f89fcd19ddd84d0",
+      "active_data_exact": true,
+      "queries": 903,
+      "live_queries": 479,
+      "deleted_queries": 424,
+      "k": 10,
+      "returned_results": 9030,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 479,
+      "seed": 5,
+      "stage": "C1",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/data_level0.bin": "309974551a0180d52e7a7d68a6de511998eab6df496c65f425f1efe65ceb6047",
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/header.bin": "b4712e33695ac1be4328b2a2a9c382cc6abbf963f7d06648febef58cf00af35d",
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/index_metadata.pickle": "b68a70153f7ba6e8466a19af11866af830ee4a843472226801cae5d5193435a8",
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/length.bin": "7474033bb842ff030b4e8028685332b4a53897b3422bf1efb050c002682d07cc",
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/link_lists.bin": "c7189b16d636fc8c1855878159f4ae3a755a2b1b3d626b8d3b1d6d9160c18f7a",
+        "chroma.sqlite3": "1405c926c064ee1cedceb241c59ed6bf0a19b5771ce584c30aa1dadb82647d4e"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed5_C1.json",
+      "detail_sha256": "9c1b6f7f62e888538d96811e7e447e520e245b6ed29125b38a1bfa4b6e59eeda"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 479,
+      "active_snapshot_sha256": "dd315228981a2f64591caed26d7f8d4b7940bd3fa0f20acd1f89fcd19ddd84d0",
+      "active_data_exact": true,
+      "queries": 903,
+      "live_queries": 479,
+      "deleted_queries": 424,
+      "k": 10,
+      "returned_results": 9030,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 479,
+      "seed": 5,
+      "stage": "C2",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "2d219180-abec-45b5-b274-3d949f0a8bfc/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+        "2d219180-abec-45b5-b274-3d949f0a8bfc/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+        "2d219180-abec-45b5-b274-3d949f0a8bfc/length.bin": "175d49cc3e983eb5a58b0fbeaa406180a3d0a4a411c6416521148c07902b305c",
+        "2d219180-abec-45b5-b274-3d949f0a8bfc/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "chroma.sqlite3": "8c64f851d1731ad0da61cd6b7c60b92c54b42ec37ab487bb0409b33993ddeb3c"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed5_C2.json",
+      "detail_sha256": "649ff781cb45448d8218bde7f29c986ada6d3ec6ff1d595e460b757fc3195709"
+    },
+    {
+      "configuration": {
+        "hnsw": {
+          "space": "l2",
+          "ef_construction": 100,
+          "ef_search": 100,
+          "max_neighbors": 16,
+          "resize_factor": 1.2,
+          "sync_threshold": 1000
+        },
+        "spann": null,
+        "embedding_function": {
+          "type": "known",
+          "name": "chroma_hearts_hash",
+          "config": {
+            "dimension": 384
+          }
+        }
+      },
+      "collection_metadata": null,
+      "collection_name": "pdf_workload",
+      "active_items": 479,
+      "active_snapshot_sha256": "dd315228981a2f64591caed26d7f8d4b7940bd3fa0f20acd1f89fcd19ddd84d0",
+      "active_data_exact": true,
+      "queries": 903,
+      "live_queries": 479,
+      "deleted_queries": 424,
+      "k": 10,
+      "returned_results": 9030,
+      "invalid_or_deleted_result_ids": 0,
+      "query_payloads_exact": true,
+      "live_self_rank1": 479,
+      "seed": 5,
+      "stage": "C3",
+      "settings_equal_C0": true,
+      "snapshot_equal_C0": true,
+      "fresh_process": true,
+      "original_unchanged": true,
+      "evidence_sha256": {
+        "2d219180-abec-45b5-b274-3d949f0a8bfc/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+        "2d219180-abec-45b5-b274-3d949f0a8bfc/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+        "2d219180-abec-45b5-b274-3d949f0a8bfc/length.bin": "175d49cc3e983eb5a58b0fbeaa406180a3d0a4a411c6416521148c07902b305c",
+        "2d219180-abec-45b5-b274-3d949f0a8bfc/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "chroma.sqlite3": "65149874af06632d418ce17b06504dc9f47d771c8e21f9d79855e129d4c12509"
+      },
+      "detail_path": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_search_arxiv50_20261026/seed5_C3.json",
+      "detail_sha256": "bbeec7f3a35864036c12597fa6e3f164e5e7660d8efa140517838750eda39f86"
+    }
+  ],
+  "status": "passed"
+}

@@ -1,0 +1,432 @@
+{
+  "tag": "carving_integrated_20261025",
+  "source_tag": "arxiv50_repeat_20261025",
+  "runs": [
+    {
+      "seed": 1,
+      "deletion": "item_delete",
+      "summary": {
+        "targets": 434,
+        "wal_full_entry": 31,
+        "identified_vector": 90,
+        "orphan_vector": 313,
+        "sqlite_carved_data": 0,
+        "none": 0,
+        "vector_recovered": 434,
+        "text_recovered": 128,
+        "unclassified_data": 0
+      },
+      "reference_vectors": 434,
+      "reference_texts": 128,
+      "api_vectors": 90,
+      "carved_records": 130,
+      "evidence_unchanged": true,
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed1/item_delete"
+    },
+    {
+      "seed": 1,
+      "deletion": "collection_drop",
+      "summary": {
+        "targets": 487,
+        "wal_full_entry": 0,
+        "identified_vector": 275,
+        "orphan_vector": 0,
+        "sqlite_carved_data": 212,
+        "none": 0,
+        "vector_recovered": 474,
+        "text_recovered": 487,
+        "unclassified_data": 0
+      },
+      "reference_vectors": 474,
+      "reference_texts": 487,
+      "api_vectors": 275,
+      "carved_records": 1259,
+      "evidence_unchanged": true,
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed1/collection_drop"
+    },
+    {
+      "seed": 2,
+      "deletion": "item_delete",
+      "summary": {
+        "targets": 465,
+        "wal_full_entry": 36,
+        "identified_vector": 91,
+        "orphan_vector": 338,
+        "sqlite_carved_data": 0,
+        "none": 0,
+        "vector_recovered": 465,
+        "text_recovered": 126,
+        "unclassified_data": 0
+      },
+      "reference_vectors": 465,
+      "reference_texts": 128,
+      "api_vectors": 92,
+      "carved_records": 132,
+      "evidence_unchanged": true,
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed2/item_delete"
+    },
+    {
+      "seed": 2,
+      "deletion": "collection_drop",
+      "summary": {
+        "targets": 428,
+        "wal_full_entry": 0,
+        "identified_vector": 227,
+        "orphan_vector": 0,
+        "sqlite_carved_data": 194,
+        "none": 7,
+        "vector_recovered": 420,
+        "text_recovered": 421,
+        "unclassified_data": 0
+      },
+      "reference_vectors": 420,
+      "reference_texts": 421,
+      "api_vectors": 227,
+      "carved_records": 837,
+      "evidence_unchanged": true,
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed2/collection_drop"
+    },
+    {
+      "seed": 3,
+      "deletion": "item_delete",
+      "summary": {
+        "targets": 429,
+        "wal_full_entry": 28,
+        "identified_vector": 100,
+        "orphan_vector": 301,
+        "sqlite_carved_data": 0,
+        "none": 0,
+        "vector_recovered": 429,
+        "text_recovered": 129,
+        "unclassified_data": 0
+      },
+      "reference_vectors": 429,
+      "reference_texts": 129,
+      "api_vectors": 101,
+      "carved_records": 136,
+      "evidence_unchanged": true,
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed3/item_delete"
+    },
+    {
+      "seed": 3,
+      "deletion": "collection_drop",
+      "summary": {
+        "targets": 490,
+        "wal_full_entry": 0,
+        "identified_vector": 279,
+        "orphan_vector": 0,
+        "sqlite_carved_data": 204,
+        "none": 7,
+        "vector_recovered": 455,
+        "text_recovered": 483,
+        "unclassified_data": 0
+      },
+      "reference_vectors": 455,
+      "reference_texts": 483,
+      "api_vectors": 279,
+      "carved_records": 965,
+      "evidence_unchanged": true,
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed3/collection_drop"
+    },
+    {
+      "seed": 4,
+      "deletion": "item_delete",
+      "summary": {
+        "targets": 459,
+        "wal_full_entry": 30,
+        "identified_vector": 93,
+        "orphan_vector": 336,
+        "sqlite_carved_data": 0,
+        "none": 0,
+        "vector_recovered": 459,
+        "text_recovered": 106,
+        "unclassified_data": 0
+      },
+      "reference_vectors": 459,
+      "reference_texts": 107,
+      "api_vectors": 94,
+      "carved_records": 104,
+      "evidence_unchanged": true,
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed4/item_delete"
+    },
+    {
+      "seed": 4,
+      "deletion": "collection_drop",
+      "summary": {
+        "targets": 428,
+        "wal_full_entry": 0,
+        "identified_vector": 230,
+        "orphan_vector": 0,
+        "sqlite_carved_data": 196,
+        "none": 2,
+        "vector_recovered": 422,
+        "text_recovered": 358,
+        "unclassified_data": 0
+      },
+      "reference_vectors": 422,
+      "reference_texts": 358,
+      "api_vectors": 230,
+      "carved_records": 886,
+      "evidence_unchanged": true,
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed4/collection_drop"
+    },
+    {
+      "seed": 5,
+      "deletion": "item_delete",
+      "summary": {
+        "targets": 424,
+        "wal_full_entry": 23,
+        "identified_vector": 94,
+        "orphan_vector": 307,
+        "sqlite_carved_data": 0,
+        "none": 0,
+        "vector_recovered": 424,
+        "text_recovered": 109,
+        "unclassified_data": 0
+      },
+      "reference_vectors": 424,
+      "reference_texts": 112,
+      "api_vectors": 94,
+      "carved_records": 112,
+      "evidence_unchanged": true,
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed5/item_delete"
+    },
+    {
+      "seed": 5,
+      "deletion": "collection_drop",
+      "summary": {
+        "targets": 479,
+        "wal_full_entry": 0,
+        "identified_vector": 285,
+        "orphan_vector": 0,
+        "sqlite_carved_data": 194,
+        "none": 0,
+        "vector_recovered": 442,
+        "text_recovered": 423,
+        "unclassified_data": 0
+      },
+      "reference_vectors": 443,
+      "reference_texts": 423,
+      "api_vectors": 285,
+      "carved_records": 943,
+      "evidence_unchanged": true,
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed5/collection_drop"
+    }
+  ],
+  "aggregate": [
+    {
+      "deletion": "item_delete",
+      "metric": "vector",
+      "targets": 2211,
+      "chroma_hearts": 2211,
+      "get_items": 471,
+      "chroma_hearts_recall": 1.0,
+      "get_items_recall": 0.2130257801899593
+    },
+    {
+      "deletion": "item_delete",
+      "metric": "original_text",
+      "targets": 604,
+      "chroma_hearts": 598,
+      "get_items": 0,
+      "chroma_hearts_recall": 0.9900662251655629,
+      "get_items_recall": 0.0
+    },
+    {
+      "deletion": "collection_drop",
+      "metric": "vector",
+      "targets": 2214,
+      "chroma_hearts": 2213,
+      "get_items": 1296,
+      "chroma_hearts_recall": 0.9995483288166215,
+      "get_items_recall": 0.5853658536585366
+    },
+    {
+      "deletion": "collection_drop",
+      "metric": "original_text",
+      "targets": 2172,
+      "chroma_hearts": 2172,
+      "get_items": 0,
+      "chroma_hearts_recall": 1.0,
+      "get_items_recall": 0.0
+    }
+  ],
+  "per_run": [
+    {
+      "seed": 1,
+      "deletion": "item_delete",
+      "metric": "vector",
+      "targets": 434,
+      "chroma_hearts": 434,
+      "get_items": 90
+    },
+    {
+      "seed": 1,
+      "deletion": "item_delete",
+      "metric": "original_text",
+      "targets": 128,
+      "chroma_hearts": 128,
+      "get_items": 0
+    },
+    {
+      "seed": 1,
+      "deletion": "collection_drop",
+      "metric": "vector",
+      "targets": 474,
+      "chroma_hearts": 474,
+      "get_items": 275
+    },
+    {
+      "seed": 1,
+      "deletion": "collection_drop",
+      "metric": "original_text",
+      "targets": 487,
+      "chroma_hearts": 487,
+      "get_items": 0
+    },
+    {
+      "seed": 2,
+      "deletion": "item_delete",
+      "metric": "vector",
+      "targets": 465,
+      "chroma_hearts": 465,
+      "get_items": 92
+    },
+    {
+      "seed": 2,
+      "deletion": "item_delete",
+      "metric": "original_text",
+      "targets": 128,
+      "chroma_hearts": 126,
+      "get_items": 0
+    },
+    {
+      "seed": 2,
+      "deletion": "collection_drop",
+      "metric": "vector",
+      "targets": 420,
+      "chroma_hearts": 420,
+      "get_items": 227
+    },
+    {
+      "seed": 2,
+      "deletion": "collection_drop",
+      "metric": "original_text",
+      "targets": 421,
+      "chroma_hearts": 421,
+      "get_items": 0
+    },
+    {
+      "seed": 3,
+      "deletion": "item_delete",
+      "metric": "vector",
+      "targets": 429,
+      "chroma_hearts": 429,
+      "get_items": 101
+    },
+    {
+      "seed": 3,
+      "deletion": "item_delete",
+      "metric": "original_text",
+      "targets": 129,
+      "chroma_hearts": 129,
+      "get_items": 0
+    },
+    {
+      "seed": 3,
+      "deletion": "collection_drop",
+      "metric": "vector",
+      "targets": 455,
+      "chroma_hearts": 455,
+      "get_items": 279
+    },
+    {
+      "seed": 3,
+      "deletion": "collection_drop",
+      "metric": "original_text",
+      "targets": 483,
+      "chroma_hearts": 483,
+      "get_items": 0
+    },
+    {
+      "seed": 4,
+      "deletion": "item_delete",
+      "metric": "vector",
+      "targets": 459,
+      "chroma_hearts": 459,
+      "get_items": 94
+    },
+    {
+      "seed": 4,
+      "deletion": "item_delete",
+      "metric": "original_text",
+      "targets": 107,
+      "chroma_hearts": 106,
+      "get_items": 0
+    },
+    {
+      "seed": 4,
+      "deletion": "collection_drop",
+      "metric": "vector",
+      "targets": 422,
+      "chroma_hearts": 422,
+      "get_items": 230
+    },
+    {
+      "seed": 4,
+      "deletion": "collection_drop",
+      "metric": "original_text",
+      "targets": 358,
+      "chroma_hearts": 358,
+      "get_items": 0
+    },
+    {
+      "seed": 5,
+      "deletion": "item_delete",
+      "metric": "vector",
+      "targets": 424,
+      "chroma_hearts": 424,
+      "get_items": 94
+    },
+    {
+      "seed": 5,
+      "deletion": "item_delete",
+      "metric": "original_text",
+      "targets": 112,
+      "chroma_hearts": 109,
+      "get_items": 0
+    },
+    {
+      "seed": 5,
+      "deletion": "collection_drop",
+      "metric": "vector",
+      "targets": 443,
+      "chroma_hearts": 442,
+      "get_items": 285
+    },
+    {
+      "seed": 5,
+      "deletion": "collection_drop",
+      "metric": "original_text",
+      "targets": 423,
+      "chroma_hearts": 423,
+      "get_items": 0
+    }
+  ],
+  "reference_note": "Prior full-byte/native-value reference union independently SQLite-decoded intact deleted records. No missing-header repair.",
+  "code_sha256": {
+    "src/chroma_hearts/parser/__init__.py": "a4911dfccabd1f86c2fdfeb30da6c135e627459fbce4d859c9088207f77fda76",
+    "src/chroma_hearts/parser/__main__.py": "55d870f180352b7c0f3256c94182f95aabd1cc0295799d7a9994053bd551982a",
+    "src/chroma_hearts/parser/hnsw_extractor.py": "d67c269904df85f5eafc77eac6899d0342277906a427730fce312638e253388d",
+    "src/chroma_hearts/parser/main.py": "6701b404dbfe02377a39e015918297a1f36ff4d4e63af4c0fabc38bf263c049b",
+    "src/chroma_hearts/parser/persistence_status.py": "c6343d410e18797a2d7b9e402aa30d25a58aa9977c78acd520d1a88077215383",
+    "src/chroma_hearts/parser/recovery_store.py": "dd42c1668bfa29e7b1fc5e6b7f9b1efc4d43363f15b9287779f4c121c68333bb",
+    "src/chroma_hearts/parser/sdk_extractor.py": "e0ab47d3ac489de162ee1f8ff96f31c3cb2b33c0cf6217bc392b68c40d9b0328",
+    "src/chroma_hearts/parser/source_copy.py": "f06f8801308bd52a36060ac239c921cc07038c825fe88d0330e9d46e0bc8b0ef",
+    "src/chroma_hearts/parser/sqlite_carver.py": "3cbb94b1fcc4a9bdd6b8c62527ad253aa49a2a8e8d13361860615898654b64ca",
+    "src/chroma_hearts/parser/sqlite_extractor.py": "2c1b90d4c15cadc258a4c0921b4337835ad76160ad51fcad25b1328249464f36",
+    "src/chroma_hearts/parser/wal_merger.py": "5b781327be71915ae0c3b75824c3e4a9b19934119f7686cdb08e262c85677f97",
+    "src/chroma_hearts/evaluator/recovery_paths.py": "0822c6b993af2bb0e36122b9722bd513ab0aabe66e722fd27a7ea45366ce5ba6",
+    "scripts/validate_integrated_carving.py": "77f72631a157fa97938076effd71f3a5ad0361134c16fa21a5fceaea1e7c3782"
+  }
+}

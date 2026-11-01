@@ -1,0 +1,4 @@
+# Install after requirements.txt for the experiment environment.
+chroma-hnswlib==0.7.6
+PyMuPDF==2.0
+numpy==2.5.4

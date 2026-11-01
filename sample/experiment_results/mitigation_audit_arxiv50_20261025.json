@@ -1,0 +1,1772 @@
+{
+  "tag": "mitigation_audit_arxiv50_20261025",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "source_section_6_2": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/workload_audit_1.5.9_arxiv50_repeat_20261025",
+  "no_reinsertions": true,
+  "scanner_used": false,
+  "runs": [
+    {
+      "seed": 1,
+      "deletion": "item_delete",
+      "stage": "C0",
+      "targets": 434,
+      "wal_full_entry": 31,
+      "identified_vector": 90,
+      "orphan_vector": 313,
+      "sqlite_carved_data": 0,
+      "none": 0,
+      "vector_recovered": 434,
+      "text_recovered": 128,
+      "unclassified_data": 0,
+      "active": {
+        "items": 487,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "bd1177097698112603dbc695fa0a93b3f0e41070de2d7c4b4b887fabe0050575"
+      },
+      "procedure": {
+        "actions": {},
+        "step_seconds": 0.0,
+        "stage_start_bytes": 13374756,
+        "stage_peak_bytes": 13374756,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 13374756,
+        "output_sha256": {
+          "chroma.sqlite3": "3d075225cb9aa8209e10bcef86fb7eecc41f8226ca3ee7c6a36995148216252a",
+          "f120abc4-b8af-478c-bcbe-65f5b499297c/data_level0.bin": "0f5a98b7aaf759095abe5571d0cf9fa4837d2aec8274714a1a7dd7bd5651d1db",
+          "f120abc4-b8af-478c-bcbe-65f5b499297c/header.bin": "a48c65752b64363d163dd2622c42e5ffe90c147ed54198fe7b64825fb8ed0ea9",
+          "f120abc4-b8af-478c-bcbe-65f5b499297c/index_metadata.pickle": "5ca7a8995070eb221a409c771a8d54e8ec375dbcc746cc6e8b32b31741b28403",
+          "f120abc4-b8af-478c-bcbe-65f5b499297c/length.bin": "3e76a0280daf4be22298772f99531d83ed16ef2693ab3fc359017558298699ac",
+          "f120abc4-b8af-478c-bcbe-65f5b499297c/link_lists.bin": "b63c24123a3dc78b4b5cd8154b88626bc07491ecd1d8188fcb1e3f67edbb07ca"
+        }
+      },
+      "cumulative_seconds": 0.0,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/C0/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/reports/C0",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 1,
+      "deletion": "item_delete",
+      "stage": "C1",
+      "targets": 434,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 434,
+      "sqlite_carved_data": 0,
+      "none": 0,
+      "vector_recovered": 434,
+      "text_recovered": 128,
+      "unclassified_data": 0,
+      "active": {
+        "items": 487,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "bd1177097698112603dbc695fa0a93b3f0e41070de2d7c4b4b887fabe0050575"
+      },
+      "procedure": {
+        "actions": {
+          "flush": {
+            "collection": "pdf_workload",
+            "sync_threshold": 1000,
+            "pending_before": 364,
+            "pending_after": 0,
+            "seconds": 0.6897678910027025
+          }
+        },
+        "step_seconds": 0.691584944994247,
+        "stage_start_bytes": 13374756,
+        "stage_peak_bytes": 13793488,
+        "step_peak_extra_bytes": 418732,
+        "stage_end_bytes": 13793488,
+        "output_sha256": {
+          "chroma.sqlite3": "1b335dd079568ea271480cd70dc34305c6158ed69bf01e4d9101d3936b799d2a",
+          "f120abc4-b8af-478c-bcbe-65f5b499297c/data_level0.bin": "111b0ab0e95b9cd3cd3ed0c03072f0c315cf8ead74deb8b60d2537e04e4f8c0a",
+          "f120abc4-b8af-478c-bcbe-65f5b499297c/header.bin": "0df7fa013d3a81b136cac26c45f099656b8f6ced2042f9faa6a25647c7ea361d",
+          "f120abc4-b8af-478c-bcbe-65f5b499297c/index_metadata.pickle": "c89b29bd63a5c7d321aadf9cff654bf9d1b7ccd236d704068ddc7675439ed6f2",
+          "f120abc4-b8af-478c-bcbe-65f5b499297c/length.bin": "60da458f2d5cc8525bb25ff490bd1209cb41d0cccc7bdb2341d82a07c1c696b3",
+          "f120abc4-b8af-478c-bcbe-65f5b499297c/link_lists.bin": "ff4c05e5504d4ff0ca153e1090676255ca7e268c7c796725752d333c8babcd05"
+        }
+      },
+      "cumulative_seconds": 0.691584944994247,
+      "cumulative_peak_extra_bytes": 418732,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/C1/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/reports/C1",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 1,
+      "deletion": "item_delete",
+      "stage": "C2",
+      "targets": 434,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 20,
+      "none": 414,
+      "vector_recovered": 0,
+      "text_recovered": 20,
+      "unclassified_data": 0,
+      "active": {
+        "items": 487,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "bd1177097698112603dbc695fa0a93b3f0e41070de2d7c4b4b887fabe0050575"
+      },
+      "procedure": {
+        "actions": {
+          "rebuild": {
+            "collection": "pdf_workload",
+            "live_items": 487,
+            "bytes_rewritten": 1795462,
+            "store_bytes_before": 13793488,
+            "store_bytes_peak": 22042996,
+            "verified": true,
+            "seconds": 0.9133219789946452,
+            "vectors_bitwise_identical": 487,
+            "vectors_max_abs_diff": 0.0
+          },
+          "removed_segment_dirs": [
+            "f120abc4-b8af-478c-bcbe-65f5b499297c"
+          ]
+        },
+        "step_seconds": 1.4057840789973852,
+        "stage_start_bytes": 13793488,
+        "stage_peak_bytes": 25450468,
+        "step_peak_extra_bytes": 11656980,
+        "stage_end_bytes": 20447396,
+        "output_sha256": {
+          "17339b28-2b13-432a-91ff-a32d512c6205/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+          "17339b28-2b13-432a-91ff-a32d512c6205/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+          "17339b28-2b13-432a-91ff-a32d512c6205/length.bin": "cac9d523d2c53591fcf902546297a125c09721f2342c18b6a45a7dd591196712",
+          "17339b28-2b13-432a-91ff-a32d512c6205/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "chroma.sqlite3": "42f971106e30597c7cf4f5574ff3537e2eebe5f754dd2a85edf08ef49ee34668"
+        }
+      },
+      "cumulative_seconds": 2.0973690239916323,
+      "cumulative_peak_extra_bytes": 12075712,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/C2/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/reports/C2",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 1,
+      "deletion": "item_delete",
+      "stage": "C3",
+      "targets": 434,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 0,
+      "none": 434,
+      "vector_recovered": 0,
+      "text_recovered": 0,
+      "unclassified_data": 0,
+      "active": {
+        "items": 487,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "bd1177097698112603dbc695fa0a93b3f0e41070de2d7c4b4b887fabe0050575"
+      },
+      "procedure": {
+        "actions": {
+          "vacuum_bytes_reclaimed": 4808704
+        },
+        "step_seconds": 0.12896401299803983,
+        "stage_start_bytes": 20447396,
+        "stage_peak_bytes": 34853028,
+        "step_peak_extra_bytes": 14405632,
+        "stage_end_bytes": 15638692,
+        "output_sha256": {
+          "17339b28-2b13-432a-91ff-a32d512c6205/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+          "17339b28-2b13-432a-91ff-a32d512c6205/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+          "17339b28-2b13-432a-91ff-a32d512c6205/length.bin": "cac9d523d2c53591fcf902546297a125c09721f2342c18b6a45a7dd591196712",
+          "17339b28-2b13-432a-91ff-a32d512c6205/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "chroma.sqlite3": "6e40da5b48cb6d5293cd3724e52705db97fb64f730b77effe1032339397a920e"
+        }
+      },
+      "cumulative_seconds": 2.226333036989672,
+      "cumulative_peak_extra_bytes": 21478272,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/C3/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/reports/C3",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 1,
+      "deletion": "collection_drop",
+      "stage": "D0",
+      "targets": 487,
+      "wal_full_entry": 0,
+      "identified_vector": 275,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 212,
+      "none": 0,
+      "vector_recovered": 474,
+      "text_recovered": 487,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {},
+        "step_seconds": 0.0,
+        "stage_start_bytes": 13374756,
+        "stage_peak_bytes": 13374756,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 13374756,
+        "output_sha256": {
+          "6ce49b3d-278e-420d-8a24-1a8f9cc56b10/data_level0.bin": "f49294369a571fc1f507e026290b07b8cfd2fad98727344448803bbfabc3d85e",
+          "6ce49b3d-278e-420d-8a24-1a8f9cc56b10/header.bin": "a48c65752b64363d163dd2622c42e5ffe90c147ed54198fe7b64825fb8ed0ea9",
+          "6ce49b3d-278e-420d-8a24-1a8f9cc56b10/index_metadata.pickle": "9e4d6d15eeeb66eb454b1479a05aa1b333920377955d8b9b49a78eb674e10a7f",
+          "6ce49b3d-278e-420d-8a24-1a8f9cc56b10/length.bin": "ad5e267baabcb6726eb60270d5ff04a4cf14316b553a98e40cc58044d7030548",
+          "6ce49b3d-278e-420d-8a24-1a8f9cc56b10/link_lists.bin": "b63c24123a3dc78b4b5cd8154b88626bc07491ecd1d8188fcb1e3f67edbb07ca",
+          "chroma.sqlite3": "3acab6147b3984647820509a0b241e7fe00561a99e734cf4469c7d732a0a36d3"
+        }
+      },
+      "cumulative_seconds": 0.0,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/D0/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/reports/D0",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 1,
+      "deletion": "collection_drop",
+      "stage": "D1",
+      "targets": 487,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 487,
+      "none": 0,
+      "vector_recovered": 200,
+      "text_recovered": 487,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {
+          "removed_segment_dirs": [
+            "6ce49b3d-278e-420d-8a24-1a8f9cc56b10"
+          ]
+        },
+        "step_seconds": 0.0012930559969390742,
+        "stage_start_bytes": 13374756,
+        "stage_peak_bytes": 13374756,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 12197888,
+        "output_sha256": {
+          "chroma.sqlite3": "3acab6147b3984647820509a0b241e7fe00561a99e734cf4469c7d732a0a36d3"
+        }
+      },
+      "cumulative_seconds": 0.0012930559969390742,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/D1/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/reports/D1",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 1,
+      "deletion": "collection_drop",
+      "stage": "D2",
+      "targets": 487,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 0,
+      "none": 487,
+      "vector_recovered": 0,
+      "text_recovered": 0,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {
+          "vacuum_bytes_reclaimed": 6504448
+        },
+        "step_seconds": 0.051807333999022376,
+        "stage_start_bytes": 12197888,
+        "stage_peak_bytes": 17904832,
+        "step_peak_extra_bytes": 5706944,
+        "stage_end_bytes": 5693440,
+        "output_sha256": {
+          "chroma.sqlite3": "93c5cf72b45a99fc78ef55f757c2c6b8497e0195bd8be45733e9a2b1b6abb99a"
+        }
+      },
+      "cumulative_seconds": 0.05310038999596145,
+      "cumulative_peak_extra_bytes": 4530076,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/D2/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed1/reports/D2",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 2,
+      "deletion": "item_delete",
+      "stage": "C0",
+      "targets": 465,
+      "wal_full_entry": 36,
+      "identified_vector": 91,
+      "orphan_vector": 338,
+      "sqlite_carved_data": 0,
+      "none": 0,
+      "vector_recovered": 465,
+      "text_recovered": 126,
+      "unclassified_data": 0,
+      "active": {
+        "items": 428,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "15cb8fa1fde9f937c8a59d5d470f0b6a7537308f7e97e254e9565e91ce165ecc"
+      },
+      "procedure": {
+        "actions": {},
+        "step_seconds": 0.0,
+        "stage_start_bytes": 11628756,
+        "stage_peak_bytes": 11628756,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 11628756,
+        "output_sha256": {
+          "55fea3cd-ef77-469f-afae-7171cb3201e6/data_level0.bin": "1837afdf2d5deaf2d5d8bc13ddee381d29ae59bcbd3226cca4db3ce5e8ec7601",
+          "55fea3cd-ef77-469f-afae-7171cb3201e6/header.bin": "7a9dc4568e5a6a96dbdf3370044f6496b9793199e4dd88d6e9dcfe3300a0ab6b",
+          "55fea3cd-ef77-469f-afae-7171cb3201e6/index_metadata.pickle": "fe3c99c20cc293f3ded8cbcabb6874479d2b25df98dbb933da36c09e9ba00cf4",
+          "55fea3cd-ef77-469f-afae-7171cb3201e6/length.bin": "0f19104f1aa8b8beb303529fd4f93047da422c262e99378208b8d86792787547",
+          "55fea3cd-ef77-469f-afae-7171cb3201e6/link_lists.bin": "debdd27d45fabbbb1f8f2a87e0e444a508e52e500bdd2645be85a6fa82ce9ef3",
+          "chroma.sqlite3": "01828839344d7e1c679f22ececfb844778a2a0fd73d1dd18355e51d25bd0db2e"
+        }
+      },
+      "cumulative_seconds": 0.0,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/C0/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/reports/C0",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 2,
+      "deletion": "item_delete",
+      "stage": "C1",
+      "targets": 465,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 465,
+      "sqlite_carved_data": 0,
+      "none": 0,
+      "vector_recovered": 465,
+      "text_recovered": 126,
+      "unclassified_data": 0,
+      "active": {
+        "items": 428,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "15cb8fa1fde9f937c8a59d5d470f0b6a7537308f7e97e254e9565e91ce165ecc"
+      },
+      "procedure": {
+        "actions": {
+          "flush": {
+            "collection": "pdf_workload",
+            "sync_threshold": 1000,
+            "pending_before": 363,
+            "pending_after": 0,
+            "seconds": 0.6704899780015694
+          }
+        },
+        "step_seconds": 0.6727244010035065,
+        "stage_start_bytes": 11628756,
+        "stage_peak_bytes": 12034816,
+        "step_peak_extra_bytes": 406060,
+        "stage_end_bytes": 12034816,
+        "output_sha256": {
+          "55fea3cd-ef77-469f-afae-7171cb3201e6/data_level0.bin": "2a1415dab0f1968784ad115a26a683b5752ba7a53f1b356344a7c01f876f2a9e",
+          "55fea3cd-ef77-469f-afae-7171cb3201e6/header.bin": "cbf3d3f243eee3130db9d0ca9bcdaeef451238ab342c038adec42a9d7e142ec2",
+          "55fea3cd-ef77-469f-afae-7171cb3201e6/index_metadata.pickle": "084f48e76eff666187b7ecd88b712b167108e50fbded4cab26663f09776bef19",
+          "55fea3cd-ef77-469f-afae-7171cb3201e6/length.bin": "ec29a56290010338af565c4d1fc564b11a16a1e12f29bf53efe7c0bb0fe4060f",
+          "55fea3cd-ef77-469f-afae-7171cb3201e6/link_lists.bin": "e5db2bd07d1e0490525d74312a94663ad6039affe4a46bb77b06dbf650462661",
+          "chroma.sqlite3": "3e2f3a74413a3fb712c959f334023274cbc1ae3c26d7832a848ebcdac6b7c1c4"
+        }
+      },
+      "cumulative_seconds": 0.6727244010035065,
+      "cumulative_peak_extra_bytes": 406060,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/C1/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/reports/C1",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 2,
+      "deletion": "item_delete",
+      "stage": "C2",
+      "targets": 465,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 33,
+      "none": 432,
+      "vector_recovered": 0,
+      "text_recovered": 33,
+      "unclassified_data": 0,
+      "active": {
+        "items": 428,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "15cb8fa1fde9f937c8a59d5d470f0b6a7537308f7e97e254e9565e91ce165ecc"
+      },
+      "procedure": {
+        "actions": {
+          "rebuild": {
+            "collection": "pdf_workload",
+            "live_items": 428,
+            "bytes_rewritten": 1577307,
+            "store_bytes_before": 12034816,
+            "store_bytes_peak": 19862436,
+            "verified": true,
+            "seconds": 0.8256258430046728,
+            "vectors_bitwise_identical": 428,
+            "vectors_max_abs_diff": 0.0
+          },
+          "removed_segment_dirs": [
+            "55fea3cd-ef77-469f-afae-7171cb3201e6"
+          ]
+        },
+        "step_seconds": 1.3639482569997199,
+        "stage_start_bytes": 12034816,
+        "stage_peak_bytes": 22622352,
+        "step_peak_extra_bytes": 10587536,
+        "stage_end_bytes": 18321572,
+        "output_sha256": {
+          "chroma.sqlite3": "fc4234caa8b96308412735a91401a5e0653fe3b80c483e91bbe24679e0f35bbb",
+          "d7d944e4-cea5-4126-aef0-0387c0c33fd2/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+          "d7d944e4-cea5-4126-aef0-0387c0c33fd2/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+          "d7d944e4-cea5-4126-aef0-0387c0c33fd2/length.bin": "02c6722b412a53d65ff20b4aecd2ea957ee8aec4b96c7a03155c54d2a9b09a97",
+          "d7d944e4-cea5-4126-aef0-0387c0c33fd2/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "cumulative_seconds": 2.0366726580032264,
+      "cumulative_peak_extra_bytes": 10993596,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/C2/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/reports/C2",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 2,
+      "deletion": "item_delete",
+      "stage": "C3",
+      "targets": 465,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 0,
+      "none": 465,
+      "vector_recovered": 0,
+      "text_recovered": 0,
+      "unclassified_data": 0,
+      "active": {
+        "items": 428,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "15cb8fa1fde9f937c8a59d5d470f0b6a7537308f7e97e254e9565e91ce165ecc"
+      },
+      "procedure": {
+        "actions": {
+          "vacuum_bytes_reclaimed": 4366336
+        },
+        "step_seconds": 0.12615920000098413,
+        "stage_start_bytes": 18321572,
+        "stage_peak_bytes": 32140564,
+        "step_peak_extra_bytes": 13818992,
+        "stage_end_bytes": 13955236,
+        "output_sha256": {
+          "chroma.sqlite3": "ef641d5ed60ca5742f239771155c99aaea43092132dd97d9b4cb05f042ed29ce",
+          "d7d944e4-cea5-4126-aef0-0387c0c33fd2/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+          "d7d944e4-cea5-4126-aef0-0387c0c33fd2/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+          "d7d944e4-cea5-4126-aef0-0387c0c33fd2/length.bin": "02c6722b412a53d65ff20b4aecd2ea957ee8aec4b96c7a03155c54d2a9b09a97",
+          "d7d944e4-cea5-4126-aef0-0387c0c33fd2/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      "cumulative_seconds": 2.1628318580042105,
+      "cumulative_peak_extra_bytes": 20511808,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/C3/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/reports/C3",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 2,
+      "deletion": "collection_drop",
+      "stage": "D0",
+      "targets": 428,
+      "wal_full_entry": 0,
+      "identified_vector": 227,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 194,
+      "none": 7,
+      "vector_recovered": 420,
+      "text_recovered": 421,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {},
+        "step_seconds": 0.0,
+        "stage_start_bytes": 11632852,
+        "stage_peak_bytes": 11632852,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 11632852,
+        "output_sha256": {
+          "1cb33bfb-ada6-4ec4-b0a9-5dcd8313e451/data_level0.bin": "e37ace864f4dd6b7929330c6989dbfa7181e0472ae3a441923db1e441960e002",
+          "1cb33bfb-ada6-4ec4-b0a9-5dcd8313e451/header.bin": "7a9dc4568e5a6a96dbdf3370044f6496b9793199e4dd88d6e9dcfe3300a0ab6b",
+          "1cb33bfb-ada6-4ec4-b0a9-5dcd8313e451/index_metadata.pickle": "ed89cbfa800e2b9a5c62ef4c2d640b69ae39550db07efd58a869f6e57872ecfa",
+          "1cb33bfb-ada6-4ec4-b0a9-5dcd8313e451/length.bin": "41ca946be9b414d66198dd79290e18864755c8141186d97afd0ec66a9ea18a21",
+          "1cb33bfb-ada6-4ec4-b0a9-5dcd8313e451/link_lists.bin": "debdd27d45fabbbb1f8f2a87e0e444a508e52e500bdd2645be85a6fa82ce9ef3",
+          "chroma.sqlite3": "01522a0a12e2027e12fc5bc67960604248b0651fd6559168cb72268bbadebe55"
+        }
+      },
+      "cumulative_seconds": 0.0,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/D0/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/reports/D0",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 2,
+      "deletion": "collection_drop",
+      "stage": "D1",
+      "targets": 428,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 421,
+      "none": 7,
+      "vector_recovered": 193,
+      "text_recovered": 421,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {
+          "removed_segment_dirs": [
+            "1cb33bfb-ada6-4ec4-b0a9-5dcd8313e451"
+          ]
+        },
+        "step_seconds": 0.0013023360006627627,
+        "stage_start_bytes": 11632852,
+        "stage_peak_bytes": 11632852,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 10498048,
+        "output_sha256": {
+          "chroma.sqlite3": "01522a0a12e2027e12fc5bc67960604248b0651fd6559168cb72268bbadebe55"
+        }
+      },
+      "cumulative_seconds": 0.0013023360006627627,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/D1/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/reports/D1",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 2,
+      "deletion": "collection_drop",
+      "stage": "D2",
+      "targets": 428,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 0,
+      "none": 428,
+      "vector_recovered": 0,
+      "text_recovered": 0,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {
+          "vacuum_bytes_reclaimed": 5382144
+        },
+        "step_seconds": 0.048115252997376956,
+        "stage_start_bytes": 10498048,
+        "stage_peak_bytes": 15625712,
+        "step_peak_extra_bytes": 5127664,
+        "stage_end_bytes": 5115904,
+        "output_sha256": {
+          "chroma.sqlite3": "ab85da4a1bba3be900fe9edfba1e9f9dbce082e63faeddcc029314f7a8b21e15"
+        }
+      },
+      "cumulative_seconds": 0.04941758899803972,
+      "cumulative_peak_extra_bytes": 3992860,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/D2/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed2/reports/D2",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 3,
+      "deletion": "item_delete",
+      "stage": "C0",
+      "targets": 429,
+      "wal_full_entry": 28,
+      "identified_vector": 100,
+      "orphan_vector": 301,
+      "sqlite_carved_data": 0,
+      "none": 0,
+      "vector_recovered": 429,
+      "text_recovered": 129,
+      "unclassified_data": 0,
+      "active": {
+        "items": 490,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "97c1d494a738306ba6beffb1d582c9e61675ed449310b79d45c1cc3e98ed680c"
+      },
+      "procedure": {
+        "actions": {},
+        "step_seconds": 0.0,
+        "stage_start_bytes": 12864004,
+        "stage_peak_bytes": 12864004,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 12864004,
+        "output_sha256": {
+          "89350f48-96fa-4d34-8e91-e06d5d0a1bec/data_level0.bin": "3ca5cd3547929c5f6afba70bd6690d410eb782a70469b8ff5715401f847aea9d",
+          "89350f48-96fa-4d34-8e91-e06d5d0a1bec/header.bin": "8cd152a168704aa2e804ba15903d1bac2a25262eedeffc8e53b14609970ff65d",
+          "89350f48-96fa-4d34-8e91-e06d5d0a1bec/index_metadata.pickle": "121816f091f33f845c9c67b293536ecb51644d68d6956aee49293071b6ae4af5",
+          "89350f48-96fa-4d34-8e91-e06d5d0a1bec/length.bin": "f9c906b7f7b80eedc9a32ec0f4d248157508433a5d46de6889118075887e77e9",
+          "89350f48-96fa-4d34-8e91-e06d5d0a1bec/link_lists.bin": "6ebbe0721ccd51b536793cfeed26c8e03608f553585ab0196433c73279e2a554",
+          "chroma.sqlite3": "da8de7f518f22ec4a7541eb96ac8f9ed5b3ceb4864517e436542640b1982b5ad"
+        }
+      },
+      "cumulative_seconds": 0.0,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/C0/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/reports/C0",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 3,
+      "deletion": "item_delete",
+      "stage": "C1",
+      "targets": 429,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 429,
+      "sqlite_carved_data": 0,
+      "none": 0,
+      "vector_recovered": 429,
+      "text_recovered": 129,
+      "unclassified_data": 0,
+      "active": {
+        "items": 490,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "97c1d494a738306ba6beffb1d582c9e61675ed449310b79d45c1cc3e98ed680c"
+      },
+      "procedure": {
+        "actions": {
+          "flush": {
+            "collection": "pdf_workload",
+            "sync_threshold": 1000,
+            "pending_before": 366,
+            "pending_after": 0,
+            "seconds": 0.679112695994263
+          }
+        },
+        "step_seconds": 0.6808681760012405,
+        "stage_start_bytes": 12864004,
+        "stage_peak_bytes": 13273500,
+        "step_peak_extra_bytes": 409496,
+        "stage_end_bytes": 13273500,
+        "output_sha256": {
+          "89350f48-96fa-4d34-8e91-e06d5d0a1bec/data_level0.bin": "031b9f6c0b41c03a0051d275d0bb35b6720638667f6a4306c004d3624ca6050a",
+          "89350f48-96fa-4d34-8e91-e06d5d0a1bec/header.bin": "149e737f8f13bf6515524265c0aafe8f781e783574f69536cafc162d663f1e27",
+          "89350f48-96fa-4d34-8e91-e06d5d0a1bec/index_metadata.pickle": "151b438ae5c6c6aac8994246a4eff58986b321d042caefbffb019d26ca6d9761",
+          "89350f48-96fa-4d34-8e91-e06d5d0a1bec/length.bin": "d1f57d8a46efc5ac1528b2b6f3d624eff4812741d639df6f99f3643bae5debf9",
+          "89350f48-96fa-4d34-8e91-e06d5d0a1bec/link_lists.bin": "c5c73fbc4f77bd248e6c3de67ed590c3f5b37a63721cde4606058d97eea13bea",
+          "chroma.sqlite3": "231c8bd15773325b77068d2b6ce8095dc61bec5e20b41ce97b748d2ed4a9e9c0"
+        }
+      },
+      "cumulative_seconds": 0.6808681760012405,
+      "cumulative_peak_extra_bytes": 409496,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/C1/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/reports/C1",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 3,
+      "deletion": "item_delete",
+      "stage": "C2",
+      "targets": 429,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 15,
+      "none": 414,
+      "vector_recovered": 0,
+      "text_recovered": 15,
+      "unclassified_data": 0,
+      "active": {
+        "items": 490,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "97c1d494a738306ba6beffb1d582c9e61675ed449310b79d45c1cc3e98ed680c"
+      },
+      "procedure": {
+        "actions": {
+          "rebuild": {
+            "collection": "pdf_workload",
+            "live_items": 490,
+            "bytes_rewritten": 1805711,
+            "store_bytes_before": 13273500,
+            "store_bytes_peak": 22182464,
+            "verified": true,
+            "seconds": 0.8846183380010189,
+            "vectors_bitwise_identical": 490,
+            "vectors_max_abs_diff": 0.0
+          },
+          "removed_segment_dirs": [
+            "89350f48-96fa-4d34-8e91-e06d5d0a1bec"
+          ]
+        },
+        "step_seconds": 1.3679315379995387,
+        "stage_start_bytes": 13273500,
+        "stage_peak_bytes": 25372436,
+        "step_peak_extra_bytes": 12098936,
+        "stage_end_bytes": 20586660,
+        "output_sha256": {
+          "a0d3448b-459f-4821-82ab-a49856271742/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+          "a0d3448b-459f-4821-82ab-a49856271742/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+          "a0d3448b-459f-4821-82ab-a49856271742/length.bin": "fde2a584dcc4e96f35762b0c8db457ddd6ed78e6ae5267c81d52210f77975f2c",
+          "a0d3448b-459f-4821-82ab-a49856271742/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "chroma.sqlite3": "16d6d074681d5db7b16139a155c216e8196afbc04199dfde386f54e2996d5d76"
+        }
+      },
+      "cumulative_seconds": 2.048799714000779,
+      "cumulative_peak_extra_bytes": 12508432,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/C2/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/reports/C2",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 3,
+      "deletion": "item_delete",
+      "stage": "C3",
+      "targets": 429,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 0,
+      "none": 429,
+      "vector_recovered": 0,
+      "text_recovered": 0,
+      "unclassified_data": 0,
+      "active": {
+        "items": 490,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "97c1d494a738306ba6beffb1d582c9e61675ed449310b79d45c1cc3e98ed680c"
+      },
+      "procedure": {
+        "actions": {
+          "vacuum_bytes_reclaimed": 4792320
+        },
+        "step_seconds": 0.1295729229968856,
+        "stage_start_bytes": 20586660,
+        "stage_peak_bytes": 34811948,
+        "step_peak_extra_bytes": 14225288,
+        "stage_end_bytes": 15794340,
+        "output_sha256": {
+          "a0d3448b-459f-4821-82ab-a49856271742/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+          "a0d3448b-459f-4821-82ab-a49856271742/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+          "a0d3448b-459f-4821-82ab-a49856271742/length.bin": "fde2a584dcc4e96f35762b0c8db457ddd6ed78e6ae5267c81d52210f77975f2c",
+          "a0d3448b-459f-4821-82ab-a49856271742/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "chroma.sqlite3": "313385ffc72656f7d57a7ee317ac7ec109cb7890d04b1eb2618984979248fe74"
+        }
+      },
+      "cumulative_seconds": 2.178372636997665,
+      "cumulative_peak_extra_bytes": 21947944,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/C3/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/reports/C3",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 3,
+      "deletion": "collection_drop",
+      "stage": "D0",
+      "targets": 490,
+      "wal_full_entry": 0,
+      "identified_vector": 279,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 204,
+      "none": 7,
+      "vector_recovered": 455,
+      "text_recovered": 483,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {},
+        "step_seconds": 0.0,
+        "stage_start_bytes": 12855812,
+        "stage_peak_bytes": 12855812,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 12855812,
+        "output_sha256": {
+          "chroma.sqlite3": "fcff180637bbf8f02c78cffda361d44b13c02ba53ba6c8094546d81d1a2ba1c8",
+          "f91d492f-5fc6-4489-ba83-6952517e36cc/data_level0.bin": "f5253e3b76e2c3e571f7375d1d4ecd27a4e544e357d36b145dfcc2229c514d3f",
+          "f91d492f-5fc6-4489-ba83-6952517e36cc/header.bin": "8cd152a168704aa2e804ba15903d1bac2a25262eedeffc8e53b14609970ff65d",
+          "f91d492f-5fc6-4489-ba83-6952517e36cc/index_metadata.pickle": "9ac28d920650fba9318020a98bd82fd7f0af59d07ccef5856140f0d5818dc882",
+          "f91d492f-5fc6-4489-ba83-6952517e36cc/length.bin": "aed457912cfd3d6007bec44664fab0832bfe1eb1808d43b91aed37bae29f0d87",
+          "f91d492f-5fc6-4489-ba83-6952517e36cc/link_lists.bin": "6ebbe0721ccd51b536793cfeed26c8e03608f553585ab0196433c73279e2a554"
+        }
+      },
+      "cumulative_seconds": 0.0,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/D0/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/reports/D0",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 3,
+      "deletion": "collection_drop",
+      "stage": "D1",
+      "targets": 490,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 483,
+      "none": 7,
+      "vector_recovered": 176,
+      "text_recovered": 483,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {
+          "removed_segment_dirs": [
+            "f91d492f-5fc6-4489-ba83-6952517e36cc"
+          ]
+        },
+        "step_seconds": 0.0013770790028502233,
+        "stage_start_bytes": 12855812,
+        "stage_peak_bytes": 12855812,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 11669504,
+        "output_sha256": {
+          "chroma.sqlite3": "fcff180637bbf8f02c78cffda361d44b13c02ba53ba6c8094546d81d1a2ba1c8"
+        }
+      },
+      "cumulative_seconds": 0.0013770790028502233,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/D1/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/reports/D1",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 3,
+      "deletion": "collection_drop",
+      "stage": "D2",
+      "targets": 490,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 0,
+      "none": 490,
+      "vector_recovered": 0,
+      "text_recovered": 0,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {
+          "vacuum_bytes_reclaimed": 5992448
+        },
+        "step_seconds": 0.05295995600317838,
+        "stage_start_bytes": 11669504,
+        "stage_peak_bytes": 17360048,
+        "step_peak_extra_bytes": 5690544,
+        "stage_end_bytes": 5677056,
+        "output_sha256": {
+          "chroma.sqlite3": "626a7486313825a4d3a5798d9e5296b01db1f2ac685644219a7f84f6ad73c4b0"
+        }
+      },
+      "cumulative_seconds": 0.0543370350060286,
+      "cumulative_peak_extra_bytes": 4504236,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/D2/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed3/reports/D2",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 4,
+      "deletion": "item_delete",
+      "stage": "C0",
+      "targets": 459,
+      "wal_full_entry": 30,
+      "identified_vector": 93,
+      "orphan_vector": 336,
+      "sqlite_carved_data": 0,
+      "none": 0,
+      "vector_recovered": 459,
+      "text_recovered": 106,
+      "unclassified_data": 0,
+      "active": {
+        "items": 428,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "5e9ade649b828345e49e96192a567d64105ff3d1fffc686d0d17a1178c4efbe7"
+      },
+      "procedure": {
+        "actions": {},
+        "step_seconds": 0.0,
+        "stage_start_bytes": 11542352,
+        "stage_peak_bytes": 11542352,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 11542352,
+        "output_sha256": {
+          "chroma.sqlite3": "9a72e3423bf67d2b0931bd19dc42f593a683d48783835f887446ac749438d530",
+          "d0004a39-665b-4c4b-9880-83ee827c5f3e/data_level0.bin": "443d125b209879b6e1c4f0e4dcbe6523d645cbbb595a03d1c8ca217d0fc26933",
+          "d0004a39-665b-4c4b-9880-83ee827c5f3e/header.bin": "c7a40cebc649ac44abc83a29e9f15df4277c953bf255ab0352d470479911e5b4",
+          "d0004a39-665b-4c4b-9880-83ee827c5f3e/index_metadata.pickle": "41bda98c5ba463c7653e48cabf6286b4484ca8ab6dd752550446ca89492b7f14",
+          "d0004a39-665b-4c4b-9880-83ee827c5f3e/length.bin": "909ea75197d83ef798ade136690b8dfc42f1ab2bd8274cf8dac638ea2da162de",
+          "d0004a39-665b-4c4b-9880-83ee827c5f3e/link_lists.bin": "4947cbda060994bc4284d01d1c0ba0c938ddcb489055f0fded898cb251ea7e28"
+        }
+      },
+      "cumulative_seconds": 0.0,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/C0/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/reports/C0",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 4,
+      "deletion": "item_delete",
+      "stage": "C1",
+      "targets": 459,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 459,
+      "sqlite_carved_data": 0,
+      "none": 0,
+      "vector_recovered": 459,
+      "text_recovered": 106,
+      "unclassified_data": 0,
+      "active": {
+        "items": 428,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "5e9ade649b828345e49e96192a567d64105ff3d1fffc686d0d17a1178c4efbe7"
+      },
+      "procedure": {
+        "actions": {
+          "flush": {
+            "collection": "pdf_workload",
+            "sync_threshold": 1000,
+            "pending_before": 350,
+            "pending_after": 0,
+            "seconds": 0.726734857998963
+          }
+        },
+        "step_seconds": 0.7287491289971513,
+        "stage_start_bytes": 11542352,
+        "stage_peak_bytes": 11932848,
+        "step_peak_extra_bytes": 390496,
+        "stage_end_bytes": 11932848,
+        "output_sha256": {
+          "chroma.sqlite3": "cee47dca8c12c720866dd108e2f61a529d66bef7af2a93f7b2d4a8fd73b8fcea",
+          "d0004a39-665b-4c4b-9880-83ee827c5f3e/data_level0.bin": "e7b5e7f65bc9e7304d661bd9b6dc2c79fe9a4aa1adb268b8a8733657b686dc7c",
+          "d0004a39-665b-4c4b-9880-83ee827c5f3e/header.bin": "a8f8c185dde5788aa200e6c9e6b3df193ba5636e00cf01e17b1077e125b0b5e1",
+          "d0004a39-665b-4c4b-9880-83ee827c5f3e/index_metadata.pickle": "e81a8d612da5712737469e8162ce25c11f5449c974abb0d22a9e3f1d04c55352",
+          "d0004a39-665b-4c4b-9880-83ee827c5f3e/length.bin": "b3e0dc4d7ea0f25e9043e1a91313c3d4c11a986c6e92e2460e14510af9a0365c",
+          "d0004a39-665b-4c4b-9880-83ee827c5f3e/link_lists.bin": "c84998b77cbc8f85029e0e97981109ebbb2c6c24752be2be1a0fe42bbd0f4e47"
+        }
+      },
+      "cumulative_seconds": 0.7287491289971513,
+      "cumulative_peak_extra_bytes": 390496,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/C1/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/reports/C1",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 4,
+      "deletion": "item_delete",
+      "stage": "C2",
+      "targets": 459,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 36,
+      "none": 423,
+      "vector_recovered": 0,
+      "text_recovered": 36,
+      "unclassified_data": 0,
+      "active": {
+        "items": 428,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "5e9ade649b828345e49e96192a567d64105ff3d1fffc686d0d17a1178c4efbe7"
+      },
+      "procedure": {
+        "actions": {
+          "rebuild": {
+            "collection": "pdf_workload",
+            "live_items": 428,
+            "bytes_rewritten": 1571940,
+            "store_bytes_before": 11932848,
+            "store_bytes_peak": 19445076,
+            "verified": true,
+            "seconds": 0.818946920997405,
+            "vectors_bitwise_identical": 428,
+            "vectors_max_abs_diff": 0.0
+          },
+          "removed_segment_dirs": [
+            "d0004a39-665b-4c4b-9880-83ee827c5f3e"
+          ]
+        },
+        "step_seconds": 1.2959224919977714,
+        "stage_start_bytes": 11932848,
+        "stage_peak_bytes": 22508744,
+        "step_peak_extra_bytes": 10575896,
+        "stage_end_bytes": 17916068,
+        "output_sha256": {
+          "b56f45b0-ee15-477f-92cc-889a15b7ee45/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+          "b56f45b0-ee15-477f-92cc-889a15b7ee45/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+          "b56f45b0-ee15-477f-92cc-889a15b7ee45/length.bin": "c55e937ce145f29d266a2204c5209c486dbe07197c77b0029de4bd9b82221055",
+          "b56f45b0-ee15-477f-92cc-889a15b7ee45/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "chroma.sqlite3": "851afa168004717f2b8b77524dac146b8da83a374573a1e03910246328175dae"
+        }
+      },
+      "cumulative_seconds": 2.0246716209949227,
+      "cumulative_peak_extra_bytes": 10966392,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/C2/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/reports/C2",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 4,
+      "deletion": "item_delete",
+      "stage": "C3",
+      "targets": 459,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 0,
+      "none": 459,
+      "vector_recovered": 0,
+      "text_recovered": 0,
+      "unclassified_data": 0,
+      "active": {
+        "items": 428,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "5e9ade649b828345e49e96192a567d64105ff3d1fffc686d0d17a1178c4efbe7"
+      },
+      "procedure": {
+        "actions": {
+          "vacuum_bytes_reclaimed": 4161536
+        },
+        "step_seconds": 0.11073977000341984,
+        "stage_start_bytes": 17916068,
+        "stage_peak_bytes": 29358212,
+        "step_peak_extra_bytes": 11442144,
+        "stage_end_bytes": 13754532,
+        "output_sha256": {
+          "b56f45b0-ee15-477f-92cc-889a15b7ee45/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+          "b56f45b0-ee15-477f-92cc-889a15b7ee45/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+          "b56f45b0-ee15-477f-92cc-889a15b7ee45/length.bin": "c55e937ce145f29d266a2204c5209c486dbe07197c77b0029de4bd9b82221055",
+          "b56f45b0-ee15-477f-92cc-889a15b7ee45/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "chroma.sqlite3": "cfd2cd08f90110354c5f750da2e5e75a91d1b2ab8a9ed856a236ee229357db02"
+        }
+      },
+      "cumulative_seconds": 2.1354113909983425,
+      "cumulative_peak_extra_bytes": 17815860,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/C3/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/reports/C3",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 4,
+      "deletion": "collection_drop",
+      "stage": "D0",
+      "targets": 428,
+      "wal_full_entry": 0,
+      "identified_vector": 230,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 196,
+      "none": 2,
+      "vector_recovered": 422,
+      "text_recovered": 358,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {},
+        "step_seconds": 0.0,
+        "stage_start_bytes": 11550544,
+        "stage_peak_bytes": 11550544,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 11550544,
+        "output_sha256": {
+          "9939bbfa-83b7-45fe-8156-6d360c851889/data_level0.bin": "443d125b209879b6e1c4f0e4dcbe6523d645cbbb595a03d1c8ca217d0fc26933",
+          "9939bbfa-83b7-45fe-8156-6d360c851889/header.bin": "c7a40cebc649ac44abc83a29e9f15df4277c953bf255ab0352d470479911e5b4",
+          "9939bbfa-83b7-45fe-8156-6d360c851889/index_metadata.pickle": "9927a97cb7998e2bb654ce370015ec7be603294cd13e49fb8249ee565206485e",
+          "9939bbfa-83b7-45fe-8156-6d360c851889/length.bin": "50231d13dbc48029e5068f9a0b42a70cd580d1d0f9982f232931542aeac74ce0",
+          "9939bbfa-83b7-45fe-8156-6d360c851889/link_lists.bin": "4947cbda060994bc4284d01d1c0ba0c938ddcb489055f0fded898cb251ea7e28",
+          "chroma.sqlite3": "bb3bf27286a8e17e51947c391d9184e46365a1daacf8b462a67e873ae7e5d773"
+        }
+      },
+      "cumulative_seconds": 0.0,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/D0/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/reports/D0",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 4,
+      "deletion": "collection_drop",
+      "stage": "D1",
+      "targets": 428,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 358,
+      "none": 70,
+      "vector_recovered": 192,
+      "text_recovered": 358,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {
+          "removed_segment_dirs": [
+            "9939bbfa-83b7-45fe-8156-6d360c851889"
+          ]
+        },
+        "step_seconds": 0.0012239069983479567,
+        "stage_start_bytes": 11550544,
+        "stage_peak_bytes": 11550544,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 10412032,
+        "output_sha256": {
+          "chroma.sqlite3": "bb3bf27286a8e17e51947c391d9184e46365a1daacf8b462a67e873ae7e5d773"
+        }
+      },
+      "cumulative_seconds": 0.0012239069983479567,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/D1/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/reports/D1",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 4,
+      "deletion": "collection_drop",
+      "stage": "D2",
+      "targets": 428,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 0,
+      "none": 428,
+      "vector_recovered": 0,
+      "text_recovered": 0,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {
+          "vacuum_bytes_reclaimed": 5320704
+        },
+        "step_seconds": 0.041981324000516906,
+        "stage_start_bytes": 10412032,
+        "stage_peak_bytes": 13790760,
+        "step_peak_extra_bytes": 3378728,
+        "stage_end_bytes": 5091328,
+        "output_sha256": {
+          "chroma.sqlite3": "3defbb0e510b2f2ebc3649a60b0556b88647c29d87255d677c6d348764e922c4"
+        }
+      },
+      "cumulative_seconds": 0.04320523099886486,
+      "cumulative_peak_extra_bytes": 2240216,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/D2/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed4/reports/D2",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 5,
+      "deletion": "item_delete",
+      "stage": "C0",
+      "targets": 424,
+      "wal_full_entry": 23,
+      "identified_vector": 94,
+      "orphan_vector": 307,
+      "sqlite_carved_data": 0,
+      "none": 0,
+      "vector_recovered": 424,
+      "text_recovered": 109,
+      "unclassified_data": 0,
+      "active": {
+        "items": 479,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "cdfbef61095842e52c016a6b6c2e0ad55bc998380a022ecc0f0625fb17be734b"
+      },
+      "procedure": {
+        "actions": {},
+        "step_seconds": 0.0,
+        "stage_start_bytes": 12406868,
+        "stage_peak_bytes": 12406868,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 12406868,
+        "output_sha256": {
+          "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/data_level0.bin": "75fe84eccbd2e0b46c3f90260e9c446796b5d60d90dc22d8792f2238668f29d7",
+          "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/header.bin": "8af00292d07eb78016cd12a18184e7b131fc3ae0e53cd6bb47f084bc0d831306",
+          "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/index_metadata.pickle": "84f383902f9755478a27300b24ef74ffe0f8636e1784fcef93467c9624e6dabc",
+          "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/length.bin": "9b4d9004484ffaed93cd0d53fc1b2515ca775f0756a686e5904aca78a29f91db",
+          "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/link_lists.bin": "d1b8e89f647a79092a1b64a3abceb6d711060f1055d26ef215ab7aa5164f43e1",
+          "chroma.sqlite3": "a0321aae66dde45bfa8a9f97a2b24c38cf229e294f621d26157fa8663783e9d4"
+        }
+      },
+      "cumulative_seconds": 0.0,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/C0/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/reports/C0",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 5,
+      "deletion": "item_delete",
+      "stage": "C1",
+      "targets": 424,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 424,
+      "sqlite_carved_data": 0,
+      "none": 0,
+      "vector_recovered": 424,
+      "text_recovered": 108,
+      "unclassified_data": 0,
+      "active": {
+        "items": 479,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "cdfbef61095842e52c016a6b6c2e0ad55bc998380a022ecc0f0625fb17be734b"
+      },
+      "procedure": {
+        "actions": {
+          "flush": {
+            "collection": "pdf_workload",
+            "sync_threshold": 1000,
+            "pending_before": 334,
+            "pending_after": 0,
+            "seconds": 0.6912279940006556
+          }
+        },
+        "step_seconds": 0.6931788699948811,
+        "stage_start_bytes": 12406868,
+        "stage_peak_bytes": 12780252,
+        "step_peak_extra_bytes": 373384,
+        "stage_end_bytes": 12780252,
+        "output_sha256": {
+          "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/data_level0.bin": "309974551a0180d52e7a7d68a6de511998eab6df496c65f425f1efe65ceb6047",
+          "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/header.bin": "b4712e33695ac1be4328b2a2a9c382cc6abbf963f7d06648febef58cf00af35d",
+          "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/index_metadata.pickle": "b68a70153f7ba6e8466a19af11866af830ee4a843472226801cae5d5193435a8",
+          "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/length.bin": "7474033bb842ff030b4e8028685332b4a53897b3422bf1efb050c002682d07cc",
+          "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/link_lists.bin": "c7189b16d636fc8c1855878159f4ae3a755a2b1b3d626b8d3b1d6d9160c18f7a",
+          "chroma.sqlite3": "1405c926c064ee1cedceb241c59ed6bf0a19b5771ce584c30aa1dadb82647d4e"
+        }
+      },
+      "cumulative_seconds": 0.6931788699948811,
+      "cumulative_peak_extra_bytes": 373384,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/C1/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/reports/C1",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 5,
+      "deletion": "item_delete",
+      "stage": "C2",
+      "targets": 424,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 14,
+      "none": 410,
+      "vector_recovered": 0,
+      "text_recovered": 14,
+      "unclassified_data": 0,
+      "active": {
+        "items": 479,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "cdfbef61095842e52c016a6b6c2e0ad55bc998380a022ecc0f0625fb17be734b"
+      },
+      "procedure": {
+        "actions": {
+          "rebuild": {
+            "collection": "pdf_workload",
+            "live_items": 479,
+            "bytes_rewritten": 1757518,
+            "store_bytes_before": 12780252,
+            "store_bytes_peak": 21713792,
+            "verified": true,
+            "seconds": 0.9043023539998103,
+            "vectors_bitwise_identical": 479,
+            "vectors_max_abs_diff": 0.0
+          },
+          "removed_segment_dirs": [
+            "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb"
+          ]
+        },
+        "step_seconds": 1.3967644659933285,
+        "stage_start_bytes": 12780252,
+        "stage_peak_bytes": 24895536,
+        "step_peak_extra_bytes": 12115284,
+        "stage_end_bytes": 20152484,
+        "output_sha256": {
+          "2d219180-abec-45b5-b274-3d949f0a8bfc/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+          "2d219180-abec-45b5-b274-3d949f0a8bfc/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+          "2d219180-abec-45b5-b274-3d949f0a8bfc/length.bin": "175d49cc3e983eb5a58b0fbeaa406180a3d0a4a411c6416521148c07902b305c",
+          "2d219180-abec-45b5-b274-3d949f0a8bfc/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "chroma.sqlite3": "8c64f851d1731ad0da61cd6b7c60b92c54b42ec37ab487bb0409b33993ddeb3c"
+        }
+      },
+      "cumulative_seconds": 2.0899433359882096,
+      "cumulative_peak_extra_bytes": 12488668,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/C2/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/reports/C2",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 5,
+      "deletion": "item_delete",
+      "stage": "C3",
+      "targets": 424,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 0,
+      "none": 424,
+      "vector_recovered": 0,
+      "text_recovered": 0,
+      "unclassified_data": 0,
+      "active": {
+        "items": 479,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "cdfbef61095842e52c016a6b6c2e0ad55bc998380a022ecc0f0625fb17be734b"
+      },
+      "procedure": {
+        "actions": {
+          "vacuum_bytes_reclaimed": 4702208
+        },
+        "step_seconds": 0.13273393000417855,
+        "stage_start_bytes": 20152484,
+        "stage_peak_bytes": 34156152,
+        "step_peak_extra_bytes": 14003668,
+        "stage_end_bytes": 15450276,
+        "output_sha256": {
+          "2d219180-abec-45b5-b274-3d949f0a8bfc/data_level0.bin": "ea9ac6972cb4666769a17755f17c5727f676f11a742e9553bf3a21119ab54394",
+          "2d219180-abec-45b5-b274-3d949f0a8bfc/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+          "2d219180-abec-45b5-b274-3d949f0a8bfc/length.bin": "175d49cc3e983eb5a58b0fbeaa406180a3d0a4a411c6416521148c07902b305c",
+          "2d219180-abec-45b5-b274-3d949f0a8bfc/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "chroma.sqlite3": "65149874af06632d418ce17b06504dc9f47d771c8e21f9d79855e129d4c12509"
+        }
+      },
+      "cumulative_seconds": 2.222677265992388,
+      "cumulative_peak_extra_bytes": 21749284,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/C3/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/reports/C3",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 5,
+      "deletion": "collection_drop",
+      "stage": "D0",
+      "targets": 479,
+      "wal_full_entry": 0,
+      "identified_vector": 285,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 194,
+      "none": 0,
+      "vector_recovered": 442,
+      "text_recovered": 423,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {},
+        "step_seconds": 0.0,
+        "stage_start_bytes": 12398676,
+        "stage_peak_bytes": 12398676,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 12398676,
+        "output_sha256": {
+          "chroma.sqlite3": "112d60dbe668430085c5ce59b5de4fce8e546239ad1b0ba5b434afcc9f2391d9",
+          "f2272c35-f311-460f-8d09-4d6341b40f6f/data_level0.bin": "41dbdca30c4665cc2e7cbbfb76e1197f75525c6275f47f4af4bdb58088c38cca",
+          "f2272c35-f311-460f-8d09-4d6341b40f6f/header.bin": "8af00292d07eb78016cd12a18184e7b131fc3ae0e53cd6bb47f084bc0d831306",
+          "f2272c35-f311-460f-8d09-4d6341b40f6f/index_metadata.pickle": "06247b8308597f649971c4489b5d900ff2f8f0b14048f739420804821c01b591",
+          "f2272c35-f311-460f-8d09-4d6341b40f6f/length.bin": "4ce1af209d66a394b23d1329263a4db72c73633ec14d910c9974017cd5b1a126",
+          "f2272c35-f311-460f-8d09-4d6341b40f6f/link_lists.bin": "d1b8e89f647a79092a1b64a3abceb6d711060f1055d26ef215ab7aa5164f43e1"
+        }
+      },
+      "cumulative_seconds": 0.0,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/D0/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/reports/D0",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 5,
+      "deletion": "collection_drop",
+      "stage": "D1",
+      "targets": 479,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 423,
+      "none": 56,
+      "vector_recovered": 157,
+      "text_recovered": 423,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {
+          "removed_segment_dirs": [
+            "f2272c35-f311-460f-8d09-4d6341b40f6f"
+          ]
+        },
+        "step_seconds": 0.001427741997758858,
+        "stage_start_bytes": 12398676,
+        "stage_peak_bytes": 12398676,
+        "step_peak_extra_bytes": 0,
+        "stage_end_bytes": 11210752,
+        "output_sha256": {
+          "chroma.sqlite3": "112d60dbe668430085c5ce59b5de4fce8e546239ad1b0ba5b434afcc9f2391d9"
+        }
+      },
+      "cumulative_seconds": 0.001427741997758858,
+      "cumulative_peak_extra_bytes": 0,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/D1/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/reports/D1",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    },
+    {
+      "seed": 5,
+      "deletion": "collection_drop",
+      "stage": "D2",
+      "targets": 479,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 0,
+      "none": 479,
+      "vector_recovered": 0,
+      "text_recovered": 0,
+      "unclassified_data": 0,
+      "active": {
+        "items": 0,
+        "ids_documents_metadata_vectors_exact": true,
+        "snapshot_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "procedure": {
+        "actions": {
+          "vacuum_bytes_reclaimed": 5627904
+        },
+        "step_seconds": 0.05026325899962103,
+        "stage_start_bytes": 11210752,
+        "stage_peak_bytes": 16806904,
+        "step_peak_extra_bytes": 5596152,
+        "stage_end_bytes": 5582848,
+        "output_sha256": {
+          "chroma.sqlite3": "d5dfcb141ffabda5cce02b09de6e5400928efc7717fc395297ed9e0e30fda445"
+        }
+      },
+      "cumulative_seconds": 0.05169100099737989,
+      "cumulative_peak_extra_bytes": 4408228,
+      "store": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/D2/chroma_db",
+      "report": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/mitigation_audit_arxiv50_20261025/seed5/reports/D2",
+      "original_unchanged": true,
+      "audit_source_unchanged": true
+    }
+  ],
+  "aggregate": [
+    {
+      "deletion": "item_delete",
+      "stage": "C0",
+      "repetitions": 5,
+      "targets": 2211,
+      "wal_full_entry": 148,
+      "identified_vector": 468,
+      "orphan_vector": 1595,
+      "sqlite_carved_data": 0,
+      "none": 0,
+      "vector_recovered": 2211,
+      "text_recovered": 598,
+      "active_items": 2312,
+      "active_exact": true,
+      "wal_full_entry_rate": 0.06693803708729082,
+      "identified_vector_rate": 0.21166892808683854,
+      "orphan_vector_rate": 0.7213930348258707,
+      "sqlite_carved_data_rate": 0.0,
+      "none_rate": 0.0,
+      "vector_recovered_rate": 1.0,
+      "text_recovered_rate": 0.2704658525554048,
+      "cumulative_seconds_mean": 0.0,
+      "cumulative_seconds_min": 0.0,
+      "cumulative_seconds_max": 0.0,
+      "cumulative_peak_extra_bytes_mean": 0,
+      "cumulative_peak_extra_bytes_min": 0,
+      "cumulative_peak_extra_bytes_max": 0
+    },
+    {
+      "deletion": "item_delete",
+      "stage": "C1",
+      "repetitions": 5,
+      "targets": 2211,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 2211,
+      "sqlite_carved_data": 0,
+      "none": 0,
+      "vector_recovered": 2211,
+      "text_recovered": 597,
+      "active_items": 2312,
+      "active_exact": true,
+      "wal_full_entry_rate": 0.0,
+      "identified_vector_rate": 0.0,
+      "orphan_vector_rate": 1.0,
+      "sqlite_carved_data_rate": 0.0,
+      "none_rate": 0.0,
+      "vector_recovered_rate": 1.0,
+      "text_recovered_rate": 0.2700135685210312,
+      "cumulative_seconds_mean": 0.6934211041982052,
+      "cumulative_seconds_min": 0.6727244010035065,
+      "cumulative_seconds_max": 0.7287491289971513,
+      "cumulative_peak_extra_bytes_mean": 399633.6,
+      "cumulative_peak_extra_bytes_min": 373384,
+      "cumulative_peak_extra_bytes_max": 418732
+    },
+    {
+      "deletion": "item_delete",
+      "stage": "C2",
+      "repetitions": 5,
+      "targets": 2211,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 118,
+      "none": 2093,
+      "vector_recovered": 0,
+      "text_recovered": 118,
+      "active_items": 2312,
+      "active_exact": true,
+      "wal_full_entry_rate": 0.0,
+      "identified_vector_rate": 0.0,
+      "orphan_vector_rate": 0.0,
+      "sqlite_carved_data_rate": 0.05336951605608322,
+      "none_rate": 0.9466304839439168,
+      "vector_recovered_rate": 0.0,
+      "text_recovered_rate": 0.05336951605608322,
+      "cumulative_seconds_mean": 2.059491270595754,
+      "cumulative_seconds_min": 2.0246716209949227,
+      "cumulative_seconds_max": 2.0973690239916323,
+      "cumulative_peak_extra_bytes_mean": 11806560,
+      "cumulative_peak_extra_bytes_min": 10966392,
+      "cumulative_peak_extra_bytes_max": 12508432
+    },
+    {
+      "deletion": "item_delete",
+      "stage": "C3",
+      "repetitions": 5,
+      "targets": 2211,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 0,
+      "none": 2211,
+      "vector_recovered": 0,
+      "text_recovered": 0,
+      "active_items": 2312,
+      "active_exact": true,
+      "wal_full_entry_rate": 0.0,
+      "identified_vector_rate": 0.0,
+      "orphan_vector_rate": 0.0,
+      "sqlite_carved_data_rate": 0.0,
+      "none_rate": 1.0,
+      "vector_recovered_rate": 0.0,
+      "text_recovered_rate": 0.0,
+      "cumulative_seconds_mean": 2.1851252377964556,
+      "cumulative_seconds_min": 2.1354113909983425,
+      "cumulative_seconds_max": 2.226333036989672,
+      "cumulative_peak_extra_bytes_mean": 20700633.6,
+      "cumulative_peak_extra_bytes_min": 17815860,
+      "cumulative_peak_extra_bytes_max": 21947944
+    },
+    {
+      "deletion": "collection_drop",
+      "stage": "D0",
+      "repetitions": 5,
+      "targets": 2312,
+      "wal_full_entry": 0,
+      "identified_vector": 1296,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 1000,
+      "none": 16,
+      "vector_recovered": 2213,
+      "text_recovered": 2172,
+      "active_items": 0,
+      "active_exact": true,
+      "wal_full_entry_rate": 0.0,
+      "identified_vector_rate": 0.5605536332179931,
+      "orphan_vector_rate": 0.0,
+      "sqlite_carved_data_rate": 0.43252595155709345,
+      "none_rate": 0.006920415224913495,
+      "vector_recovered_rate": 0.9571799307958477,
+      "text_recovered_rate": 0.9394463667820069,
+      "cumulative_seconds_mean": 0.0,
+      "cumulative_seconds_min": 0.0,
+      "cumulative_seconds_max": 0.0,
+      "cumulative_peak_extra_bytes_mean": 0,
+      "cumulative_peak_extra_bytes_min": 0,
+      "cumulative_peak_extra_bytes_max": 0
+    },
+    {
+      "deletion": "collection_drop",
+      "stage": "D1",
+      "repetitions": 5,
+      "targets": 2312,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 2172,
+      "none": 140,
+      "vector_recovered": 918,
+      "text_recovered": 2172,
+      "active_items": 0,
+      "active_exact": true,
+      "wal_full_entry_rate": 0.0,
+      "identified_vector_rate": 0.0,
+      "orphan_vector_rate": 0.0,
+      "sqlite_carved_data_rate": 0.9394463667820069,
+      "none_rate": 0.06055363321799308,
+      "vector_recovered_rate": 0.39705882352941174,
+      "text_recovered_rate": 0.9394463667820069,
+      "cumulative_seconds_mean": 0.001324823999311775,
+      "cumulative_seconds_min": 0.0012239069983479567,
+      "cumulative_seconds_max": 0.001427741997758858,
+      "cumulative_peak_extra_bytes_mean": 0,
+      "cumulative_peak_extra_bytes_min": 0,
+      "cumulative_peak_extra_bytes_max": 0
+    },
+    {
+      "deletion": "collection_drop",
+      "stage": "D2",
+      "repetitions": 5,
+      "targets": 2312,
+      "wal_full_entry": 0,
+      "identified_vector": 0,
+      "orphan_vector": 0,
+      "sqlite_carved_data": 0,
+      "none": 2312,
+      "vector_recovered": 0,
+      "text_recovered": 0,
+      "active_items": 0,
+      "active_exact": true,
+      "wal_full_entry_rate": 0.0,
+      "identified_vector_rate": 0.0,
+      "orphan_vector_rate": 0.0,
+      "sqlite_carved_data_rate": 0.0,
+      "none_rate": 1.0,
+      "vector_recovered_rate": 0.0,
+      "text_recovered_rate": 0.0,
+      "cumulative_seconds_mean": 0.050350249199254904,
+      "cumulative_seconds_min": 0.04320523099886486,
+      "cumulative_seconds_max": 0.0543370350060286,
+      "cumulative_peak_extra_bytes_mean": 3935123.2,
+      "cumulative_peak_extra_bytes_min": 2240216,
+      "cumulative_peak_extra_bytes_max": 4530076
+    }
+  ],
+  "provenance": {
+    "source_report_sha256": "9ab87af541b555990251d7532523d68f72fb65e8d2a2e67d891001b5e2280bce",
+    "corpus_sha256": "7b0a2964cfaf05dd6ff9f7351525b0a7a989d9f8c941c6e472efcc1627f18ce8",
+    "code_sha256": {
+      "src/chroma_hearts/parser/__init__.py": "a4911dfccabd1f86c2fdfeb30da6c135e627459fbce4d859c9088207f77fda76",
+      "src/chroma_hearts/parser/__main__.py": "55d870f180352b7c0f3256c94182f95aabd1cc0295799d7a9994053bd551982a",
+      "src/chroma_hearts/parser/hnsw_extractor.py": "891f2852dd6440ddbc3133b986131a17d37f1fe8d8ba39dab7dd236333e43f9d",
+      "src/chroma_hearts/parser/main.py": "6701b404dbfe02377a39e015918297a1f36ff4d4e63af4c0fabc38bf263c049b",
+      "src/chroma_hearts/parser/persistence_status.py": "c6343d410e18797a2d7b9e402aa30d25a58aa9977c78acd520d1a88077215383",
+      "src/chroma_hearts/parser/recovery_store.py": "dd42c1668bfa29e7b1fc5e6b7f9b1efc4d43363f15b9287779f4c121c68333bb",
+      "src/chroma_hearts/parser/sdk_extractor.py": "e0ab47d3ac489de162ee1f8ff96f31c3cb2b33c0cf6217bc392b68c40d9b0328",
+      "src/chroma_hearts/parser/source_copy.py": "f06f8801308bd52a36060ac239c921cc07038c825fe88d0330e9d46e0bc8b0ef",
+      "src/chroma_hearts/parser/sqlite_carver.py": "3cbb94b1fcc4a9bdd6b8c62527ad253aa49a2a8e8d13361860615898654b64ca",
+      "src/chroma_hearts/parser/sqlite_extractor.py": "2c1b90d4c15cadc258a4c0921b4337835ad76160ad51fcad25b1328249464f36",
+      "src/chroma_hearts/parser/wal_merger.py": "5b781327be71915ae0c3b75824c3e4a9b19934119f7686cdb08e262c85677f97",
+      "src/chroma_hearts/evaluator/recovery_paths.py": "0822c6b993af2bb0e36122b9722bd513ab0aabe66e722fd27a7ea45366ce5ba6",
+      "src/chroma_hearts/mitigation.py": "6374d8b1cbfde372be8e3c59e4f89f8fc17116fb137bfadc68c619820f90f924",
+      "scripts/_experiment_common.py": "2db73b9c185be9278df7348ebfaa77f6be219a754d82a6b9f679f197762216c3",
+      "scripts/run_mitigation_audit.py": "bf5129eefcd5337387e1b33bd27d40010a6675dbfec1a556a263021076b92f0d"
+    },
+    "environment": {
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+      "chromadb": "1.5.9",
+      "chroma-hnswlib": "0.7.6",
+      "numpy": "2.5.4"
+    }
+  },
+  "timing": "Serial steps; includes subprocess startup and internal copy validation. Excludes snapshot copying and independent audits. Cumulative time sums steps; peak extra is the largest sampled store size minus the baseline size. 20 ms disk sampling; not an application downtime measurement."
+}

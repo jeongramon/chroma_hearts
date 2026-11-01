@@ -1,0 +1,5 @@
+deletion,metric,reference_targets,chroma_hearts,get_items,chroma_hearts_recall_pct,get_items_recall_pct
+item_delete,vector,2211,2211,471,100.0,21.3
+item_delete,original_text,604,598,,99.01,
+collection_drop,vector,2214,2213,1296,99.95,58.54
+collection_drop,original_text,2172,2172,,100.0,

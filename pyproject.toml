@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chroma-hearts"
+version = "0.1.0"
+description = "Forensic recovery of deleted embeddings from persisted Chroma stores (WAL, HNSW, and SQLite carving)."
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,802 @@
+{
+  "method": "Every merged row and every source-evidence row in the existing section-6.2 production output, including SDK, WAL, HNSW and SQLite carving, compared against all inserted items (active and deleted). Exact full float32 vector bytes and whole text; check vector-text consistency and known ID association. No target-success filtering.",
+  "scope": "Output-value validity in the existing ten workloads, not general deletion-attribution precision. Counts include overlapping sources and duplicate evidence records; missing IDs are not inferred and rows without data are not treated as recovered values.",
+  "input_sha256": {
+    "sample/experiment_results/recovery_paths_carving_integrated_20261025.json": "ed3f9c55db9b0e1a9f3ce00796c2a301aa703a53393a23866e92fa1e4fa04db8",
+    "sample/experiment_results/workload_audit_1.5.9_arxiv50_repeat_20261025.json": "9ab87af541b555990251d7532523d68f72fb65e8d2a2e67d891001b5e2280bce"
+  },
+  "code_sha256": {
+    "scripts/verify_recovery_output_values.py": "f5da2c34a37049da7c9250186cc2c5e5f248c4168a510c6b44b0cb7b43ebaeb4",
+    "scripts/run_validation_set.py": "78faadbd8ec80d05cdafc2668c7c1b8b5f9bef2d49095198544afccde49d6bb0",
+    "src/chroma_hearts/generator/embedding.py": "b06fa8afe718c95253b1dbd68e0d1b9419b260b19da8db3724d2760c4f55b851",
+    "src/chroma_hearts/parser/source_copy.py": "f06f8801308bd52a36060ac239c921cc07038c825fe88d0330e9d46e0bc8b0ef"
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "deletion": "item_delete",
+      "inserted_items": 921,
+      "active_items": 487,
+      "deleted_targets": 434,
+      "manifest_sha256": "91776320c4494b146908df0f9f2c1fa7325239db1f738fe5f908accb3c175fed",
+      "recovery_db_sha256": "512d2e3a3891f6bbb60e73308788b4a939654e11c4a6206ba190851bf86d24ac",
+      "recovery_db": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed1/item_delete/embeddings.sqlite3",
+      "evidence_sha256": {
+        "chroma.sqlite3": "3d075225cb9aa8209e10bcef86fb7eecc41f8226ca3ee7c6a36995148216252a",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/data_level0.bin": "0f5a98b7aaf759095abe5571d0cf9fa4837d2aec8274714a1a7dd7bd5651d1db",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/header.bin": "a48c65752b64363d163dd2622c42e5ffe90c147ed54198fe7b64825fb8ed0ea9",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/index_metadata.pickle": "5ca7a8995070eb221a409c771a8d54e8ec375dbcc746cc6e8b32b31741b28403",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/length.bin": "3e76a0280daf4be22298772f99531d83ed16ef2693ab3fc359017558298699ac",
+        "f120abc4-b8af-478c-bcbe-65f5b499297c/link_lists.bin": "b63c24123a3dc78b4b5cd8154b88626bc07491ecd1d8188fcb1e3f67edbb07ca"
+      },
+      "source_and_output_unchanged": true,
+      "embeddings": {
+        "counts": {
+          "rows": 1176,
+          "vector_outputs": 925,
+          "text_outputs": 648,
+          "paired_outputs": 518,
+          "id_linked_data_outputs": 608,
+          "outputs_without_id": 447,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "merged": {
+            "rows": 1176,
+            "vector_outputs": 925,
+            "text_outputs": 648
+          }
+        },
+        "errors": []
+      },
+      "recovery_evidence": {
+        "counts": {
+          "rows": 1664,
+          "vector_outputs": 1413,
+          "text_outputs": 861,
+          "paired_outputs": 731,
+          "id_linked_data_outputs": 1096,
+          "outputs_without_id": 447,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "sdk": {
+            "rows": 487,
+            "vector_outputs": 487,
+            "text_outputs": 487
+          },
+          "sqlite_carving": {
+            "rows": 130,
+            "text_outputs": 130
+          },
+          "wal": {
+            "rows": 365,
+            "vector_outputs": 244,
+            "text_outputs": 244
+          },
+          "hnsw": {
+            "rows": 682,
+            "vector_outputs": 682
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "seed": 1,
+      "deletion": "collection_drop",
+      "inserted_items": 921,
+      "active_items": 0,
+      "deleted_targets": 487,
+      "manifest_sha256": "2675bdd0d754582ecd30521a802e1d4ee90c599d793831a00ab9af38b7666636",
+      "recovery_db_sha256": "9aed69c65bed7b2ea053e65bedfc35c7916014356b0bc5e29bbae98ed84cfdc0",
+      "recovery_db": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed1/collection_drop/embeddings.sqlite3",
+      "evidence_sha256": {
+        "6ce49b3d-278e-420d-8a24-1a8f9cc56b10/data_level0.bin": "f49294369a571fc1f507e026290b07b8cfd2fad98727344448803bbfabc3d85e",
+        "6ce49b3d-278e-420d-8a24-1a8f9cc56b10/header.bin": "a48c65752b64363d163dd2622c42e5ffe90c147ed54198fe7b64825fb8ed0ea9",
+        "6ce49b3d-278e-420d-8a24-1a8f9cc56b10/index_metadata.pickle": "9e4d6d15eeeb66eb454b1479a05aa1b333920377955d8b9b49a78eb674e10a7f",
+        "6ce49b3d-278e-420d-8a24-1a8f9cc56b10/length.bin": "ad5e267baabcb6726eb60270d5ff04a4cf14316b553a98e40cc58044d7030548",
+        "6ce49b3d-278e-420d-8a24-1a8f9cc56b10/link_lists.bin": "b63c24123a3dc78b4b5cd8154b88626bc07491ecd1d8188fcb1e3f67edbb07ca",
+        "chroma.sqlite3": "3acab6147b3984647820509a0b241e7fe00561a99e734cf4469c7d732a0a36d3"
+      },
+      "source_and_output_unchanged": true,
+      "embeddings": {
+        "counts": {
+          "rows": 1941,
+          "vector_outputs": 909,
+          "text_outputs": 1259,
+          "paired_outputs": 227,
+          "id_linked_data_outputs": 592,
+          "outputs_without_id": 1349,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "merged": {
+            "rows": 1941,
+            "text_outputs": 1259,
+            "vector_outputs": 909
+          }
+        },
+        "errors": []
+      },
+      "recovery_evidence": {
+        "counts": {
+          "rows": 1941,
+          "vector_outputs": 909,
+          "text_outputs": 1259,
+          "paired_outputs": 227,
+          "id_linked_data_outputs": 592,
+          "outputs_without_id": 1349,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "sqlite_carving": {
+            "rows": 1259,
+            "text_outputs": 1259,
+            "vector_outputs": 227
+          },
+          "hnsw": {
+            "rows": 682,
+            "vector_outputs": 682
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "seed": 2,
+      "deletion": "item_delete",
+      "inserted_items": 893,
+      "active_items": 428,
+      "deleted_targets": 465,
+      "manifest_sha256": "8b697c99b1d8358cb4fffb062b02f4f8ec2132aadb8439094597732f7efb38d0",
+      "recovery_db_sha256": "43b5709397a817a5bc9057a5497731cc412bb380bef4790974d8929dd77473e1",
+      "recovery_db": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed2/item_delete/embeddings.sqlite3",
+      "evidence_sha256": {
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/data_level0.bin": "1837afdf2d5deaf2d5d8bc13ddee381d29ae59bcbd3226cca4db3ce5e8ec7601",
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/header.bin": "7a9dc4568e5a6a96dbdf3370044f6496b9793199e4dd88d6e9dcfe3300a0ab6b",
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/index_metadata.pickle": "fe3c99c20cc293f3ded8cbcabb6874479d2b25df98dbb933da36c09e9ba00cf4",
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/length.bin": "0f19104f1aa8b8beb303529fd4f93047da422c262e99378208b8d86792787547",
+        "55fea3cd-ef77-469f-afae-7171cb3201e6/link_lists.bin": "debdd27d45fabbbb1f8f2a87e0e444a508e52e500bdd2645be85a6fa82ce9ef3",
+        "chroma.sqlite3": "01828839344d7e1c679f22ececfb844778a2a0fd73d1dd18355e51d25bd0db2e"
+      },
+      "source_and_output_unchanged": true,
+      "embeddings": {
+        "counts": {
+          "rows": 1155,
+          "vector_outputs": 895,
+          "text_outputs": 596,
+          "paired_outputs": 464,
+          "id_linked_data_outputs": 555,
+          "outputs_without_id": 472,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "merged": {
+            "rows": 1155,
+            "vector_outputs": 895,
+            "text_outputs": 596
+          }
+        },
+        "errors": []
+      },
+      "recovery_evidence": {
+        "counts": {
+          "rows": 1583,
+          "vector_outputs": 1324,
+          "text_outputs": 797,
+          "paired_outputs": 665,
+          "id_linked_data_outputs": 984,
+          "outputs_without_id": 472,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "sdk": {
+            "rows": 428,
+            "vector_outputs": 428,
+            "text_outputs": 428
+          },
+          "sqlite_carving": {
+            "rows": 132,
+            "text_outputs": 132
+          },
+          "wal": {
+            "rows": 364,
+            "vector_outputs": 237,
+            "text_outputs": 237
+          },
+          "hnsw": {
+            "rows": 659,
+            "vector_outputs": 659
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "seed": 2,
+      "deletion": "collection_drop",
+      "inserted_items": 893,
+      "active_items": 0,
+      "deleted_targets": 428,
+      "manifest_sha256": "a9806ac78276d0196438ffd69d9c1f899a024224824df178bde60c2fa7b2e0ab",
+      "recovery_db_sha256": "7250a795085a08c7d79c1cbeb7d4e14fe6ef33b77f08b4052d2aedbfea2f8d2b",
+      "recovery_db": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed2/collection_drop/embeddings.sqlite3",
+      "evidence_sha256": {
+        "1cb33bfb-ada6-4ec4-b0a9-5dcd8313e451/data_level0.bin": "e37ace864f4dd6b7929330c6989dbfa7181e0472ae3a441923db1e441960e002",
+        "1cb33bfb-ada6-4ec4-b0a9-5dcd8313e451/header.bin": "7a9dc4568e5a6a96dbdf3370044f6496b9793199e4dd88d6e9dcfe3300a0ab6b",
+        "1cb33bfb-ada6-4ec4-b0a9-5dcd8313e451/index_metadata.pickle": "ed89cbfa800e2b9a5c62ef4c2d640b69ae39550db07efd58a869f6e57872ecfa",
+        "1cb33bfb-ada6-4ec4-b0a9-5dcd8313e451/length.bin": "41ca946be9b414d66198dd79290e18864755c8141186d97afd0ec66a9ea18a21",
+        "1cb33bfb-ada6-4ec4-b0a9-5dcd8313e451/link_lists.bin": "debdd27d45fabbbb1f8f2a87e0e444a508e52e500bdd2645be85a6fa82ce9ef3",
+        "chroma.sqlite3": "01522a0a12e2027e12fc5bc67960604248b0651fd6559168cb72268bbadebe55"
+      },
+      "source_and_output_unchanged": true,
+      "embeddings": {
+        "counts": {
+          "rows": 1496,
+          "vector_outputs": 888,
+          "text_outputs": 837,
+          "paired_outputs": 229,
+          "id_linked_data_outputs": 548,
+          "outputs_without_id": 948,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "merged": {
+            "rows": 1496,
+            "text_outputs": 837,
+            "vector_outputs": 888
+          }
+        },
+        "errors": []
+      },
+      "recovery_evidence": {
+        "counts": {
+          "rows": 1496,
+          "vector_outputs": 888,
+          "text_outputs": 837,
+          "paired_outputs": 229,
+          "id_linked_data_outputs": 548,
+          "outputs_without_id": 948,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "sqlite_carving": {
+            "rows": 837,
+            "text_outputs": 837,
+            "vector_outputs": 229
+          },
+          "hnsw": {
+            "rows": 659,
+            "vector_outputs": 659
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "seed": 3,
+      "deletion": "item_delete",
+      "inserted_items": 919,
+      "active_items": 490,
+      "deleted_targets": 429,
+      "manifest_sha256": "c63598cf864edcf69a848fb66f58678ad2c51b022e1d7d756e5b999e859147c4",
+      "recovery_db_sha256": "21df7ea25517931e113b210c5ef456607a30f0fceaed281cbd1537b6ecfc5864",
+      "recovery_db": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed3/item_delete/embeddings.sqlite3",
+      "evidence_sha256": {
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/data_level0.bin": "3ca5cd3547929c5f6afba70bd6690d410eb782a70469b8ff5715401f847aea9d",
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/header.bin": "8cd152a168704aa2e804ba15903d1bac2a25262eedeffc8e53b14609970ff65d",
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/index_metadata.pickle": "121816f091f33f845c9c67b293536ecb51644d68d6956aee49293071b6ae4af5",
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/length.bin": "f9c906b7f7b80eedc9a32ec0f4d248157508433a5d46de6889118075887e77e9",
+        "89350f48-96fa-4d34-8e91-e06d5d0a1bec/link_lists.bin": "6ebbe0721ccd51b536793cfeed26c8e03608f553585ab0196433c73279e2a554",
+        "chroma.sqlite3": "da8de7f518f22ec4a7541eb96ac8f9ed5b3ceb4864517e436542640b1982b5ad"
+      },
+      "source_and_output_unchanged": true,
+      "embeddings": {
+        "counts": {
+          "rows": 1190,
+          "vector_outputs": 925,
+          "text_outputs": 654,
+          "paired_outputs": 518,
+          "id_linked_data_outputs": 618,
+          "outputs_without_id": 443,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "merged": {
+            "rows": 1190,
+            "vector_outputs": 925,
+            "text_outputs": 654
+          }
+        },
+        "errors": []
+      },
+      "recovery_evidence": {
+        "counts": {
+          "rows": 1680,
+          "vector_outputs": 1416,
+          "text_outputs": 865,
+          "paired_outputs": 729,
+          "id_linked_data_outputs": 1109,
+          "outputs_without_id": 443,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "sdk": {
+            "rows": 490,
+            "vector_outputs": 490,
+            "text_outputs": 490
+          },
+          "sqlite_carving": {
+            "rows": 136,
+            "text_outputs": 136
+          },
+          "wal": {
+            "rows": 367,
+            "vector_outputs": 239,
+            "text_outputs": 239
+          },
+          "hnsw": {
+            "rows": 687,
+            "vector_outputs": 687
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "seed": 3,
+      "deletion": "collection_drop",
+      "inserted_items": 919,
+      "active_items": 0,
+      "deleted_targets": 490,
+      "manifest_sha256": "93e7e1c7aad8f741a5acc502b9bcf77020f75a78ab3f8700914a0dea708036f0",
+      "recovery_db_sha256": "78e55e16ba9c223c979be74a3ce45ad4ad5ee7c2d87e6da885d45fef0e604f7e",
+      "recovery_db": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed3/collection_drop/embeddings.sqlite3",
+      "evidence_sha256": {
+        "chroma.sqlite3": "fcff180637bbf8f02c78cffda361d44b13c02ba53ba6c8094546d81d1a2ba1c8",
+        "f91d492f-5fc6-4489-ba83-6952517e36cc/data_level0.bin": "f5253e3b76e2c3e571f7375d1d4ecd27a4e544e357d36b145dfcc2229c514d3f",
+        "f91d492f-5fc6-4489-ba83-6952517e36cc/header.bin": "8cd152a168704aa2e804ba15903d1bac2a25262eedeffc8e53b14609970ff65d",
+        "f91d492f-5fc6-4489-ba83-6952517e36cc/index_metadata.pickle": "9ac28d920650fba9318020a98bd82fd7f0af59d07ccef5856140f0d5818dc882",
+        "f91d492f-5fc6-4489-ba83-6952517e36cc/length.bin": "aed457912cfd3d6007bec44664fab0832bfe1eb1808d43b91aed37bae29f0d87",
+        "f91d492f-5fc6-4489-ba83-6952517e36cc/link_lists.bin": "6ebbe0721ccd51b536793cfeed26c8e03608f553585ab0196433c73279e2a554"
+      },
+      "source_and_output_unchanged": true,
+      "embeddings": {
+        "counts": {
+          "rows": 1652,
+          "vector_outputs": 887,
+          "text_outputs": 965,
+          "paired_outputs": 200,
+          "id_linked_data_outputs": 580,
+          "outputs_without_id": 1072,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "merged": {
+            "rows": 1652,
+            "text_outputs": 965,
+            "vector_outputs": 887
+          }
+        },
+        "errors": []
+      },
+      "recovery_evidence": {
+        "counts": {
+          "rows": 1652,
+          "vector_outputs": 887,
+          "text_outputs": 965,
+          "paired_outputs": 200,
+          "id_linked_data_outputs": 580,
+          "outputs_without_id": 1072,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "sqlite_carving": {
+            "rows": 965,
+            "text_outputs": 965,
+            "vector_outputs": 200
+          },
+          "hnsw": {
+            "rows": 687,
+            "vector_outputs": 687
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "seed": 4,
+      "deletion": "item_delete",
+      "inserted_items": 887,
+      "active_items": 428,
+      "deleted_targets": 459,
+      "manifest_sha256": "8f407fd6c1bcf131f2855dd5d1c6862b58911ac927ed4d8f9eaa5079cbfc2a5a",
+      "recovery_db_sha256": "a529d969f87ad67540b79551b29595893abde04ee429446a16f60d9e1f444914",
+      "recovery_db": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed4/item_delete/embeddings.sqlite3",
+      "evidence_sha256": {
+        "chroma.sqlite3": "9a72e3423bf67d2b0931bd19dc42f593a683d48783835f887446ac749438d530",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/data_level0.bin": "443d125b209879b6e1c4f0e4dcbe6523d645cbbb595a03d1c8ca217d0fc26933",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/header.bin": "c7a40cebc649ac44abc83a29e9f15df4277c953bf255ab0352d470479911e5b4",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/index_metadata.pickle": "41bda98c5ba463c7653e48cabf6286b4484ca8ab6dd752550446ca89492b7f14",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/length.bin": "909ea75197d83ef798ade136690b8dfc42f1ab2bd8274cf8dac638ea2da162de",
+        "d0004a39-665b-4c4b-9880-83ee827c5f3e/link_lists.bin": "4947cbda060994bc4284d01d1c0ba0c938ddcb489055f0fded898cb251ea7e28"
+      },
+      "source_and_output_unchanged": true,
+      "embeddings": {
+        "counts": {
+          "rows": 1116,
+          "vector_outputs": 888,
+          "text_outputs": 562,
+          "paired_outputs": 458,
+          "id_linked_data_outputs": 551,
+          "outputs_without_id": 441,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "merged": {
+            "rows": 1116,
+            "vector_outputs": 888,
+            "text_outputs": 562
+          }
+        },
+        "errors": []
+      },
+      "recovery_evidence": {
+        "counts": {
+          "rows": 1544,
+          "vector_outputs": 1317,
+          "text_outputs": 760,
+          "paired_outputs": 656,
+          "id_linked_data_outputs": 980,
+          "outputs_without_id": 441,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "sdk": {
+            "rows": 428,
+            "vector_outputs": 428,
+            "text_outputs": 428
+          },
+          "sqlite_carving": {
+            "rows": 104,
+            "text_outputs": 104
+          },
+          "wal": {
+            "rows": 351,
+            "vector_outputs": 228,
+            "text_outputs": 228
+          },
+          "hnsw": {
+            "rows": 661,
+            "vector_outputs": 661
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "seed": 4,
+      "deletion": "collection_drop",
+      "inserted_items": 887,
+      "active_items": 0,
+      "deleted_targets": 428,
+      "manifest_sha256": "a885715932899ac481eeccdba47692f367846da0b4644a847b2c7889f900cb93",
+      "recovery_db_sha256": "26efc372908e16593c5965556f3e5d97f9c637dfddf28b3daaf92ca4ef29c3f3",
+      "recovery_db": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed4/collection_drop/embeddings.sqlite3",
+      "evidence_sha256": {
+        "9939bbfa-83b7-45fe-8156-6d360c851889/data_level0.bin": "443d125b209879b6e1c4f0e4dcbe6523d645cbbb595a03d1c8ca217d0fc26933",
+        "9939bbfa-83b7-45fe-8156-6d360c851889/header.bin": "c7a40cebc649ac44abc83a29e9f15df4277c953bf255ab0352d470479911e5b4",
+        "9939bbfa-83b7-45fe-8156-6d360c851889/index_metadata.pickle": "9927a97cb7998e2bb654ce370015ec7be603294cd13e49fb8249ee565206485e",
+        "9939bbfa-83b7-45fe-8156-6d360c851889/length.bin": "50231d13dbc48029e5068f9a0b42a70cd580d1d0f9982f232931542aeac74ce0",
+        "9939bbfa-83b7-45fe-8156-6d360c851889/link_lists.bin": "4947cbda060994bc4284d01d1c0ba0c938ddcb489055f0fded898cb251ea7e28",
+        "chroma.sqlite3": "bb3bf27286a8e17e51947c391d9184e46365a1daacf8b462a67e873ae7e5d773"
+      },
+      "source_and_output_unchanged": true,
+      "embeddings": {
+        "counts": {
+          "rows": 1547,
+          "vector_outputs": 884,
+          "text_outputs": 886,
+          "paired_outputs": 223,
+          "id_linked_data_outputs": 547,
+          "outputs_without_id": 1000,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "merged": {
+            "rows": 1547,
+            "text_outputs": 886,
+            "vector_outputs": 884
+          }
+        },
+        "errors": []
+      },
+      "recovery_evidence": {
+        "counts": {
+          "rows": 1547,
+          "vector_outputs": 884,
+          "text_outputs": 886,
+          "paired_outputs": 223,
+          "id_linked_data_outputs": 547,
+          "outputs_without_id": 1000,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "sqlite_carving": {
+            "rows": 886,
+            "text_outputs": 886,
+            "vector_outputs": 223
+          },
+          "hnsw": {
+            "rows": 661,
+            "vector_outputs": 661
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "seed": 5,
+      "deletion": "item_delete",
+      "inserted_items": 903,
+      "active_items": 479,
+      "deleted_targets": 424,
+      "manifest_sha256": "26598201a0f841ebc7d9b5206b0a2937a62ca0596a7b463f6df64c8c449e837b",
+      "recovery_db_sha256": "b04f076792fe8596cf0ea2c0139642bb26444c37a558ee5e4c3b72e1fbe3afa7",
+      "recovery_db": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed5/item_delete/embeddings.sqlite3",
+      "evidence_sha256": {
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/data_level0.bin": "75fe84eccbd2e0b46c3f90260e9c446796b5d60d90dc22d8792f2238668f29d7",
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/header.bin": "8af00292d07eb78016cd12a18184e7b131fc3ae0e53cd6bb47f084bc0d831306",
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/index_metadata.pickle": "84f383902f9755478a27300b24ef74ffe0f8636e1784fcef93467c9624e6dabc",
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/length.bin": "9b4d9004484ffaed93cd0d53fc1b2515ca775f0756a686e5904aca78a29f91db",
+        "03ec4bdf-9983-4e88-9ba1-fd5993fc64cb/link_lists.bin": "d1b8e89f647a79092a1b64a3abceb6d711060f1055d26ef215ab7aa5164f43e1",
+        "chroma.sqlite3": "a0321aae66dde45bfa8a9f97a2b24c38cf229e294f621d26157fa8663783e9d4"
+      },
+      "source_and_output_unchanged": true,
+      "embeddings": {
+        "counts": {
+          "rows": 1135,
+          "vector_outputs": 905,
+          "text_outputs": 614,
+          "paired_outputs": 502,
+          "id_linked_data_outputs": 596,
+          "outputs_without_id": 421,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "merged": {
+            "rows": 1135,
+            "vector_outputs": 905,
+            "text_outputs": 614
+          }
+        },
+        "errors": []
+      },
+      "recovery_evidence": {
+        "counts": {
+          "rows": 1614,
+          "vector_outputs": 1384,
+          "text_outputs": 808,
+          "paired_outputs": 696,
+          "id_linked_data_outputs": 1075,
+          "outputs_without_id": 421,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "sdk": {
+            "rows": 479,
+            "vector_outputs": 479,
+            "text_outputs": 479
+          },
+          "sqlite_carving": {
+            "rows": 112,
+            "text_outputs": 112
+          },
+          "wal": {
+            "rows": 335,
+            "vector_outputs": 217,
+            "text_outputs": 217
+          },
+          "hnsw": {
+            "rows": 688,
+            "vector_outputs": 688
+          }
+        },
+        "errors": []
+      }
+    },
+    {
+      "seed": 5,
+      "deletion": "collection_drop",
+      "inserted_items": 903,
+      "active_items": 0,
+      "deleted_targets": 479,
+      "manifest_sha256": "bcaf15816880c1afa8acd076fa6864fe698e7a6e5d701baf12c4b7554924de6d",
+      "recovery_db_sha256": "2dd6772ac74472816e946a01e6e51210a0b3c7fcbd3ddbc715fd2374c37f6ec4",
+      "recovery_db": "/home/user/Desktop/chroma/chroma_hearts/sample/experiments/carving_integrated_20261025/seed5/collection_drop/embeddings.sqlite3",
+      "evidence_sha256": {
+        "chroma.sqlite3": "112d60dbe668430085c5ce59b5de4fce8e546239ad1b0ba5b434afcc9f2391d9",
+        "f2272c35-f311-460f-8d09-4d6341b40f6f/data_level0.bin": "41dbdca30c4665cc2e7cbbfb76e1197f75525c6275f47f4af4bdb58088c38cca",
+        "f2272c35-f311-460f-8d09-4d6341b40f6f/header.bin": "8af00292d07eb78016cd12a18184e7b131fc3ae0e53cd6bb47f084bc0d831306",
+        "f2272c35-f311-460f-8d09-4d6341b40f6f/index_metadata.pickle": "06247b8308597f649971c4489b5d900ff2f8f0b14048f739420804821c01b591",
+        "f2272c35-f311-460f-8d09-4d6341b40f6f/length.bin": "4ce1af209d66a394b23d1329263a4db72c73633ec14d910c9974017cd5b1a126",
+        "f2272c35-f311-460f-8d09-4d6341b40f6f/link_lists.bin": "d1b8e89f647a79092a1b64a3abceb6d711060f1055d26ef215ab7aa5164f43e1"
+      },
+      "source_and_output_unchanged": true,
+      "embeddings": {
+        "counts": {
+          "rows": 1631,
+          "vector_outputs": 867,
+          "text_outputs": 943,
+          "paired_outputs": 179,
+          "id_linked_data_outputs": 558,
+          "outputs_without_id": 1073,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "merged": {
+            "rows": 1631,
+            "text_outputs": 943,
+            "vector_outputs": 867
+          }
+        },
+        "errors": []
+      },
+      "recovery_evidence": {
+        "counts": {
+          "rows": 1631,
+          "vector_outputs": 867,
+          "text_outputs": 943,
+          "paired_outputs": 179,
+          "id_linked_data_outputs": 558,
+          "outputs_without_id": 1073,
+          "invalid_vectors": 0,
+          "invalid_texts": 0,
+          "invalid_metadata": 0,
+          "inconsistent_vector_text_pairs": 0,
+          "incorrect_id_links": 0,
+          "rows_with_errors": 0
+        },
+        "by_method": {
+          "sqlite_carving": {
+            "rows": 943,
+            "text_outputs": 943,
+            "vector_outputs": 179
+          },
+          "hnsw": {
+            "rows": 688,
+            "vector_outputs": 688
+          }
+        },
+        "errors": []
+      }
+    }
+  ],
+  "aggregate": {
+    "embeddings": {
+      "rows": 14039,
+      "vector_outputs": 8973,
+      "text_outputs": 7964,
+      "paired_outputs": 3518,
+      "id_linked_data_outputs": 5753,
+      "outputs_without_id": 7666,
+      "invalid_vectors": 0,
+      "invalid_texts": 0,
+      "invalid_metadata": 0,
+      "inconsistent_vector_text_pairs": 0,
+      "incorrect_id_links": 0,
+      "rows_with_errors": 0
+    },
+    "recovery_evidence": {
+      "rows": 16352,
+      "vector_outputs": 11289,
+      "text_outputs": 8981,
+      "paired_outputs": 4535,
+      "id_linked_data_outputs": 8069,
+      "outputs_without_id": 7666,
+      "invalid_vectors": 0,
+      "invalid_texts": 0,
+      "invalid_metadata": 0,
+      "inconsistent_vector_text_pairs": 0,
+      "incorrect_id_links": 0,
+      "rows_with_errors": 0
+    }
+  },
+  "all_outputs_valid": true
+}

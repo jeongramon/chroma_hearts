@@ -1,0 +1,8 @@
+stage,targets,wal_full_entry,wal_full_entry_pct,identified_vector,identified_vector_pct,orphan_vector,orphan_vector_pct,sqlite_carved_data,sqlite_carved_data_pct,vector_recovered,vector_recovered_pct,text_recovered,text_recovered_pct
+C0,2211,148,6.69,468,21.17,1595,72.14,0,0.0,2211,100.0,598,27.05
+C1,2211,0,0.0,0,0.0,2211,100.0,0,0.0,2211,100.0,597,27.0
+C2,2211,0,0.0,0,0.0,0,0.0,118,5.34,0,0.0,118,5.34
+C3,2211,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+D0,2312,0,0.0,1296,56.06,0,0.0,1000,43.25,2213,95.72,2172,93.94
+D1,2312,0,0.0,0,0.0,0,0.0,2172,93.94,918,39.71,2172,93.94
+D2,2312,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
